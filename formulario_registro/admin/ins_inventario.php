@@ -59,6 +59,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	    $ins->bindparam(':foto', $copia);
 	     
 		if ($ins->execute()){
+
+
 		echo alerta('!¡Felicidades! completo con exito el registro, pronto nos contactaremos con usted para evaluar su solicitud.','altadetienda.php');
 		$ins = null;
 		$con = null;
@@ -74,5 +76,53 @@ echo alerta('Utiliza el formulario','inventario.php');
 }
 
  ?> 
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ecommerce</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <style>
+      	body{
+      		padding-bottom: 10px;
+      	}
+      </style>
+</head>
+<body class="bg-light">
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-info">
+	
+		
+			<form method="POST">
+<tr><td colspan='2' align="center"><input type="submit" value="Cerrar sesión" name="btncerrar" /></td></tr>
+</form>
+		</div>
+	</nav>
+	
+
+<div class="container" style="margin-top: 1%;">
+	<div class="card text-white bg-secondary">
+			<div class="card-header"><h4 class="card-title">Alta de tienda</h4></div>
+			<div class="card-body">
+
+</div>
+
+<div class="alert alert-success" role="alert">
+ ¡Felicidades! completo con exito el registro, pronto nos contactaremos con usted para evaluar su solicitud.
+<br>
+ <a href="../../carpeta_pagina_principal">
+    <button>Inicio</button>
+  </a> 
+</div>
+
+
+</div>
+
+
  </body>
  </html>

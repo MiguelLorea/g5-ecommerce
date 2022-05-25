@@ -1,9 +1,78 @@
-<?php include '../extend/header.php'; ?>
+<?php include '../conexion/conexion.php';
+
+include('../../login/conexion.php');
+
+
+?>
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<title>Ecommerce</title>
+	<link rel="stylesheet" href="../css/bootstrap.min.css">
+	<link href="https://fonts.googleapis.com/icon?family=Material+Icons"
+      rel="stylesheet">
+      <style>
+      	body{
+      		padding-bottom: 10px;
+      	}
+      </style>
+</head>
+<body class="bg-light">
+
+	<nav class="navbar navbar-expand-lg navbar-light bg-info">
+	
+		
+			<form method="POST">
+<tr><td colspan='2' align="center"><input type="submit" value="Cerrar sesión" name="btncerrar" /></td></tr>
+</form>
+		</div>
+	</nav>
+	
 
 <div class="container" style="margin-top: 1%;">
 	<div class="card text-white bg-secondary">
 			<div class="card-header"><h4 class="card-title">Alta de tienda</h4></div>
 			<div class="card-body">
+
+
+
+
+
+
+<link rel="stylesheet" href="../login/login.css">
+
+<table>
+
+<?php
+if(isset($_SESSION['nombredelusuario']))
+{
+	$usuarioingresado = $_SESSION['nombredelusuario'];
+	echo "<tr><td colspan='2' align='center'><h1>Bienvenido: $usuarioingresado </h1></td></tr>";
+}
+else
+{
+	header('location: ../../login/index.php');
+}
+?>
+
+
+
+<?php 
+
+if(isset($_POST['btncerrar']))
+{
+	session_destroy();
+	header('location: ../../login/index.php');
+}
+
+?>
+</table>
+
+
+
+
+
 				<form action="ins_inventario.php" method="post" autocomplete="off" enctype="multipart/form-data">
 					<div class="form-group">
 						<input type="text" name="nombredeusuario" required placeholder="Nombre de usuario" class="form-control">
