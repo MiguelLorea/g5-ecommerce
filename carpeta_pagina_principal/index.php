@@ -1,3 +1,11 @@
+
+<?php include '../formulario_registro/conexion/conexion.php';
+
+
+
+
+?>
+
 <!DOCTYPE html>
 <html lang="es">
 
@@ -63,16 +71,55 @@
 
                 <div><img src="img/icono.png"></div>
 
+
+
+
+
+
+
                 <li class="submenu"><a href="#">Inicio<span class="icon-down-open"></span></a>
 
                     <ul>
-                        <!--<li><a href=""><span #=""></span> registrar tu local</a></li>-->
-                        <li><a href="../formulario_registro/admin/altadetienda.php">registrar tu local</a></li>
 
-                    </ul>
+<?php
+if(isset($_SESSION['nombredelusuario']))
+{
+    $usuarioingresado = $_SESSION['nombredelusuario'];
+    echo "<tr><td colspan='2' align='center'><a>Bienvenido: $usuarioingresado </a></td></tr>";
+}
+else
+{
+
+echo "<a href='../formulario_registro/admin/altadetienda.php'>registrar tu local</a>";
+                       
+                   
+
+                
+                    }
+?>
+       
+
+
+
+              <?php
+if(isset($_SESSION['nombredelusuario']))
+{
+
+
+    echo "<a href='logout.php'>Cerrar Sesión</a>";
+ 
+
+
+}
+
+
+?></form>
+  </ul>
+
 
                 </li>
-                <li><a href="" #="">Quíenes somos</a></li>
+
+         <li><a href="" #="">Quíenes somos</a></li>
                 <li><a href="" #="">Categorías</a></li>
                 <li><a href="" #="">Nuestros Servicios</a></li>
                 <li><a href="" #="">Contacto</a></li>
