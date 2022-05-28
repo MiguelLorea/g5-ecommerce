@@ -19,6 +19,7 @@
     <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
     <!--ponemos icono-->
     <link rel="stylesheet" href="css/pag-principal.css">
+    
 
     <link rel="stylesheet" href="css/fontello.css">
    
@@ -119,10 +120,10 @@ if(isset($_SESSION['nombredelusuario']))
 
                 </li>
 
-         <li><a href="" #="">Quíenes somos</a></li>
-                <li><a href="" #="">Categorías</a></li>
-                <li><a href="" #="">Nuestros Servicios</a></li>
-                <li><a href="" #="">Contacto</a></li>
+         <li><a href="#quienes somos" #="">Quíenes somos</a></li>
+                <li><a href="#categorias" #="">Categorías</a></li>
+                <li><a href="#nuestros servicios" #="">Nuestros Servicios</a></li>
+                <li><a href="#contactos" #="">Contacto</a></li>
             </ul>
         </nav>
       
@@ -162,7 +163,7 @@ if(isset($_SESSION['nombredelusuario']))
     <main>
         <!-- especifica el contenido principal de un documento.-->
 
-        <section class="contenedor sobre-nosotros">
+        <section class="contenedor sobre-nosotros" id="quienes somos">
             <h2 class="titulo"><u>QUÍENES SOMOS</u></h2>
             <br>
             <br>
@@ -198,7 +199,7 @@ if(isset($_SESSION['nombredelusuario']))
 
 
 
-            <div class="contenedor">
+            <div class="contenedor" id="categorias">
 
                 <!-- <h3 class="titulo1"><u>¡¡forma parte de LA GALERIA!!<br> ingresa a:</u></h3>-->
                 <h2 class="titulo"><u>CATEGORÍAS</u></h2>
@@ -322,7 +323,7 @@ if(isset($_SESSION['nombredelusuario']))
         </section>
 
 
-        <section class="clientes contenedor">
+        <section class="clientes contenedor" >
             <h2 class="titulo"><u>QUE DICEN NUESTROS CLIENTES</u></h2>
             <br>
             <br>
@@ -354,7 +355,7 @@ if(isset($_SESSION['nombredelusuario']))
 
         <section>
 
-            <div class="about-servicios">
+            <div class="about-servicios" id="nuestros servicios">
 
                 <div class="contenedor">
 
@@ -383,8 +384,8 @@ if(isset($_SESSION['nombredelusuario']))
                         <div class="servicio-ind">
 
                             <img src="img/undraw_Contact_us_re_4qqt.png" alt="">
-                            <h3>NAME</h3>
-                            <p>bla-bla-bla</p>
+                            <h3>INTEGRACIÓN REDES SOCIALES</h3>
+                            <p>enlaces de tus redes sociales a tu sitio web</p>
 
 
 
@@ -405,7 +406,7 @@ if(isset($_SESSION['nombredelusuario']))
 
     <footer>
 
-        <div class="contenedor-footer">
+        <div class="contenedor-footer" id="contactos">
 
             <div class="content-foo">
                 <h4>TELÉFONO</h4>

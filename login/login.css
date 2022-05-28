@@ -1,26 +1,34 @@
 body {
   margin: 0;
   padding: 0;
-  background: url(fondo.png) no-repeat center top;
-  background-size: cover;
-  font-family: sans-serif;
   
+  background: #b4b3af /*url(fondo.png) no-repeat center top*/;
+  background-size:cover;
+  font-family:Georgia, 'Times New Roman', Times, serif;
+  display:flex;
+  
+
 }
 
 table 
 {
+  
 	margin:0;
-	border: 2px solid #353A46;
-	background-color: #3ABAF1;
+	border: 2px solid #edf0f3;
+ 	background-color:#684f72;
 	top: 50%;
 	left: 50%;
 	position: absolute;
 	transform: translate(-50%,-50%);
+  
+	
 }
+
+
 
 td
 {
-	  
+	
 	padding: 10px 30px;
 }
 
@@ -30,36 +38,61 @@ width: 100%;
 font-size: 16px;
 border: none;
 box-sizing: border-box;
-border-bottom: 2px solid black;
+border-bottom: 2px solid rgb(12, 12, 12);
 background: transparent;
 
 }
 
 img
 {
+  	
+  width: 60%;
+  height: 100px;
+  padding: 10px;
 
 }
 
 label
 {
   font-size: 20px;
-font-weight: bold;
+  font-weight: bold;
 }
 
 input[type=submit]
 {
-  font-size: 16px;
-background-color: #f3f3f3;
-color:black;
-font-weight: bold;
-border-radius: 20px;
-height: 40px;
-width: 200px;
-border: solid;
+
+ font-weight: bold;
+ font-size: 16px;
+ background-color: #e9e3ec;
+ color:black;
+ border-radius: 20px;
+ height: 30px;
+ width: 100%;
+ border: 0;
+ cursor: pointer;
+ margin-bottom: 0;
+ opacity: 0.9;
+
 }
+
+input[type=submit]:hover{
+
+	opacity: 1;
+
+}
+
+input[type=submit]:active{
+
+  transform: scale(0.9);
+}
+
 
 a
 {
-	font-size: 14px;
+
+  font-weight: bold;
+	font-size: 15px;
+	color:#eceff1;
+  font-family: Arial, Helvetica, sans-serif;
 	
 }
