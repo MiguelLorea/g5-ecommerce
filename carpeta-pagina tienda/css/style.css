@@ -212,10 +212,10 @@ h2 {
 /**********************************/
 .top-bar { 
     
-    padding: 3px 0px 3px ;
+    padding: 10px 0px 3px ; 
     font-size: 15px;
-    color: #6f61ff;
-    background: #000000;
+    color: #6f61ff;  /*letra*/
+    background: #000000; /*fondo*/
    
 }
 
