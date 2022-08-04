@@ -234,6 +234,58 @@
             $('.checkout .payment-method .payment-content').slideUp();
             $('#' + checkbox_id + '-show').slideDown();
         }
+
+
     });
-})(jQuery);
+
+    
+    
+
+
+})(jQuery)
+
+
+/*let colors2 = ["grey", "white", "indigo"];
+
+function btnChanger(){
+
+let random =Math.floor(Math.random() * colors.length);
+let random2 =Math.floor(Math.random() * colors2.length);
+
+console.log ("Random2.value: " + random2);
+
+let z= document.getElementById ("contenedor").style.background =colors2[random2];
+
+
+}
+
+
+
+/*function btnChanger(){
+    
+    let x_bg =Math.floor(Math.random() * 256 );
+    let y_bg =Math.floor(Math.random() * 256 );
+    let z_bg =Math.floor(Math.random() * 256 );
+
+    bgColor= "rgb(" + x_bg +"," + y_bg +","+ z_bg +")";
+    console.log(bgColor);
+
+
+  let btn_change_bg= document.querySelector('.changeBG');
+  let changeBG= btn_change_bg.style.background =bgcolor;
+
+
+}*/
+
+
+function cambiarfondo(x){
+    console.log (x.value);
+    var body=document.getElementById("body");
+    body.style.backgroundColor=x.value;
+
+}
+;
+
+
+
 

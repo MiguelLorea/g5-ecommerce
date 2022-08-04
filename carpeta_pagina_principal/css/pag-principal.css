@@ -5,6 +5,49 @@
 
 }
 
+.up{
+    position: fixed;
+    display: none;
+    background: #6f61ff;
+    color: #ffffff;
+    width: 40px;
+    height: 40px;
+    text-align: center;
+    line-height: 1;
+    font-size: 16px;
+    border-radius: 4px;
+    right: 15px;
+    bottom: 15px;
+    transition:0.5s;
+    z-index: 10;
+  }
+
+ 
+
+  .float{
+	position:fixed;
+	width:60px;
+	height:60px;
+	bottom:40px;
+	right:40px;
+	background-color:#25d366;
+	color:#FFF;
+	border-radius:50px;
+	text-align:center;
+  font-size:30px;
+	box-shadow: 2px 2px 3px #999;
+  z-index:12;
+}
+.float:hover {
+	text-decoration: none;
+	color: #25d366;
+  background-color:#fff;
+}
+
+.my-float{
+	margin-top:16px;
+}
+
 
 body {
 
@@ -68,8 +111,8 @@ header {
     /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
     background-size: cover;
     background-attachment: fixed;
-    /*position: relative;*/
-    position:fixed;
+    position: relative;
+   /* position: absolute;*/
 
 
 
@@ -116,6 +159,13 @@ header label {
 
 /* menu*/
 
+.menu{
+    position: fixed;
+    z-index: 1000;
+    top: 0;
+    width: 100%;
+}
+
 .menu ul img { /*logo que aparece en el menu*/
 
     width: 30%;
@@ -132,7 +182,6 @@ header label {
 
 
 .menu ul {
-
 
     background: #904c99;/*color de fondo del menu, cuando esta en pantalla completa*/
     display: flex;
@@ -276,7 +325,7 @@ header .textos-header {
 .textos-header h2 {
 
     font-size: 50px;
-    font-weight: 300;
+    font-weight: 400px;
     color: rgb(244, 238, 245);
     margin-bottom: 10px;
 
@@ -626,6 +675,7 @@ header .textos-header {
 .servicio-ind h3 {
 
     margin: 10px 0;
+    font-size: 20px;
 }
 
 .servicio-ind p {
@@ -684,11 +734,19 @@ footer {
 
 .titulo-final {
     text-align: center;
-    font-size: 24px;
+    font-size: 20px;
     margin: 20px 0 0 0;
-    color: #d63636;
+    color: #260893;
+    
 }
 
+.titulo-final1 {
+    color: #fbfdfe;
+    text-align: center;
+    font-size: 15px;
+    margin:10px 0 0 0;
+    cursor: pointer;
+}
 
 
 /*responsive*/
@@ -707,8 +765,7 @@ footer {
     margin-bottom: 5px;
     display: flex;
     justify-content:flex-end;
-     
-
+    
 
    }
 
@@ -954,6 +1011,7 @@ footer {
 }
 
 
+
 @media screen and (max-width: 600px) {
 
 
@@ -977,7 +1035,7 @@ footer {
 
 
     }
-
+ 
     .contenedor-footer {
         flex-direction: column;
         border: none;
@@ -999,7 +1057,7 @@ footer {
 
     .banner {
         width: 70%;
-        height: 300px;
+        height: 300px;}
    
 
 }
@@ -1055,7 +1113,7 @@ footer {
 
     .banner {
         width: 80%;
-        height: 300px;
+        height: 300px;}
 
 }
 
