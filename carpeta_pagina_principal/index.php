@@ -19,22 +19,17 @@
     <link rel="shortcut icon" href="img/icono.png" type="image/x-icon">
     <!--ponemos icono-->
     <link rel="stylesheet" href="css/pag-principal.css">
-    
-    <link rel="stylesheet" href="css/fontello.css">
-    <link rel="stylesheet" href="css/style.css">
 
-    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
-    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-  
-    
+    <link rel="stylesheet" href="css/fontello.css">
+   
+   
+
     <!--<meta content="width=device-width, initial-scale=1.0" name="viewport">-->
 
 </head>
 
 <body>
     
-
-
     <script  src="jquery/jquery-3.6.0.min.js"></script>
     
   
@@ -124,10 +119,10 @@ if(isset($_SESSION['nombredelusuario']))
 
                 </li>
 
-         <li><a href="#quienes somos" #="">Quíenes somos</a></li>
-                <li><a href="#categorias" #="">Categorías</a></li>
-                <li><a href="#nuestros servicios" #="">Nuestros Servicios</a></li>
-                <li><a href="#contacto" #="">Contacto</a></li>
+         <li><a href="" #="">Quíenes somos</a></li>
+                <li><a href="" #="">Categorías</a></li>
+                <li><a href="" #="">Nuestros Servicios</a></li>
+                <li><a href="" #="">Contacto</a></li>
             </ul>
         </nav>
       
@@ -151,13 +146,13 @@ if(isset($_SESSION['nombredelusuario']))
 
 
 
-        <!--<div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
+        <div class="wave" style="height: 150px; overflow: hidden;"><svg viewBox="0 0 500 150" preserveAspectRatio="none"
                 style="height: 100%; width: 100%;">
                 <path d="M-0.00,49.99 C230.64,162.18 349.21,-49.99 500.01,49.99 L500.01,150.00 L-0.00,150.00 Z"
                     style="stroke: none; fill: #fff;"></path>
             </svg>
 
-        </div>-->
+        </div>
 
     </header>
 
@@ -167,7 +162,7 @@ if(isset($_SESSION['nombredelusuario']))
     <main>
         <!-- especifica el contenido principal de un documento.-->
 
-        <section class="contenedor sobre-nosotros" id="quienes somos">
+        <section class="contenedor sobre-nosotros">
             <h2 class="titulo"><u>QUÍENES SOMOS</u></h2>
             <br>
             <br>
@@ -203,7 +198,7 @@ if(isset($_SESSION['nombredelusuario']))
 
 
 
-            <div class="contenedor" id="categorias">
+            <div class="contenedor">
 
                 <!-- <h3 class="titulo1"><u>¡¡forma parte de LA GALERIA!!<br> ingresa a:</u></h3>-->
                 <h2 class="titulo"><u>CATEGORÍAS</u></h2>
@@ -327,7 +322,7 @@ if(isset($_SESSION['nombredelusuario']))
         </section>
 
 
-        <section class="clientes contenedor" id="nuestros clientes">
+        <section class="clientes contenedor">
             <h2 class="titulo"><u>QUE DICEN NUESTROS CLIENTES</u></h2>
             <br>
             <br>
@@ -361,7 +356,7 @@ if(isset($_SESSION['nombredelusuario']))
 
             <div class="about-servicios">
 
-                <div class="contenedor" id="nuestros servicios">
+                <div class="contenedor">
 
                     <h2 class="titulo"><u>NUESTROS SERVICIOS</u></h2>
                     <br>
@@ -388,8 +383,8 @@ if(isset($_SESSION['nombredelusuario']))
                         <div class="servicio-ind">
 
                             <img src="img/undraw_Contact_us_re_4qqt.png" alt="">
-                            <h3>INTEGRACIÓN REDES SOCIALES</h3>
-                            <p>enlaces de tus redes sociales a tu sitio web</p>
+                            <h3>NAME</h3>
+                            <p>bla-bla-bla</p>
 
 
 
@@ -410,66 +405,36 @@ if(isset($_SESSION['nombredelusuario']))
 
     <footer>
 
-        <div class="contenedor-footer" id="contacto">
+        <div class="contenedor-footer">
 
             <div class="content-foo">
-                <!--<h4>Contacto</h4>-->
-                <!--<p>3512786549</p>-->
-                <h4>CONTACTANOS</h4>
-                            
-               <p><i class="fa fa-map-marker"></i> Rio Negro 456,Cordoba,ARG</p>
-               <p><i class="fa fa-envelope"></i> Lagaleria@gmail.com</p>
-                <p><i class="fa fa-phone"></i> 155786584</p>
-                                
-
-                            
+                <h4>TELÉFONO</h4>
+                <p>3512786549</p>
 
             </div>
 
             <div class="content-foo">
-                <h4>REDES SOCIALES</h4>
-
-                <a href=""><i class=><img src="img/icons8-twitter-circled-32.png" alt=""></i></a><!--"fab fa-twitter"-->
-                <a href=""><i class=><img src="img/icons8-facebook-nuevo-32.png" alt=""></i></a><!--"fab fa-facebook-f"-->
-                        
-                <a href=""><i class=><img src="img/icons8-instagram-32.png" alt=""></i></a><!--"fab fa-instagram"-->
-                <a href=""><i class=><img src="img/icons8-youtube-32.png" alt=""></i></a><!--"fab fa-youtube"-->
-
-                <a href="https://api.whatsapp.com/send?phone=3512047231&text=Hola,%20sean%20bienvenidos! "><i class=><img src="img/icons8-whatsapp-32.png" alt=""></i></a><!--"fab fa-youtube"-->
+                <h4>EMAIL</h4>
+                <p>lagaleria@gmail.com</p>
 
             </div>
 
             <div class="content-foo">
-                <h4>NOSOTROS</h4>
-                <p>Politica de Privacidad</p>
-               <p> Terminos y Condiciones </p>
-               <p> ayuda</p>
-               
+                <h4>CHAT</h4>
+                <p>....</p>
 
             </div>
 
 
         </div>
-
-
-
         <h2 class="titulo-final">&copy;lA GALERIA MULTILOCAL</h2>
-        <h5 class="titulo-final1">todos los derechos reservados</h5>
+    </footer>
 
-        <div class ="up">
-            
-         <span class= " icon circle-up"></span> 
-        
-        </div>
-
-       
-
-        
-</footer>
     
+
     <script src="jquery/menu.js"></script>
    
-  
+
 
 </body>
 

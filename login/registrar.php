@@ -11,13 +11,13 @@
 
 <table>
 
-<tr><td style="background-color:#CBB8D3;"><label><center>Registrar</center></label></td></tr>
-<tr><td><center><img src="icono.png"/><center></td></tr>
+<tr><td style="background-color:#33A8DB;"><label>Registrar</label></td></tr>
+<tr><td><img src=""/></td></tr>
 <tr><td><input type="text" name="txtusuario" placeholder="&#128273; Ingresar usuario" required /></td></tr>
 <tr><td><input type="password" name="txtpassword" placeholder="&#128274; Ingresar Contraseña" required /> </td></tr>
 <tr><td><input type="submit" value="Registrar" name="btnregistrar"/> </td></tr>
 <br>
-<tr><td><a href="index.php"><center>Iniciar sesión<center></a></td></tr>
+<tr><td><a href="index.php" style="float:right">Iniciar sesión</a></td></tr>
 </table>
 
 
@@ -33,7 +33,7 @@ include('conexion.php');
 session_start();
 if(isset($_SESSION['nombredelusuario']))
 {
-	header('location: listar.php');
+	header('location:  ../formulario_registro/admin/altadetienda.php');
 }
 
 if(isset($_POST["btnregistrar"]))
