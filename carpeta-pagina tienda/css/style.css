@@ -643,7 +643,7 @@ h1::after{
 
 
 /**********************************/
-/********* Breadcrumb CSS *********/ 
+/********* Breadcrumb CSS *********/ /* titulo, lista de productos*/
 /**********************************/
 .breadcrumb-wrap {
     position: relative;
@@ -785,6 +785,7 @@ h1::after{
 /**********************************/
 .product-item {
     position: relative;
+    
 }
 
 .product-item .product-title { /* color de arriba del cuadrado de la imagen*/
@@ -803,11 +804,11 @@ h1::after{
    /* width: 100%;*/
 }
 
-.product-item .product-title a { /*color del nombre de los productos*/
+/*.product-item .product-title a { /*color del nombre de los productos
     margin-bottom: 5px;
     color: #ad0909;
     font-size: 18px;
-}
+}*/
 
 
 
@@ -910,20 +911,25 @@ h1::after{
 
 .product-item .product-price h3 {
     display: inline-block;
-    color: #ffffff;
-    margin: 0;
+    color: #ebe4e4;
+    
+    
 }
 
 .product-item .product-price h3 span {
     font-size: 17px;
+    
 }
 
 .product-item .product-price .btn {
     float: right;
     border: none;
     color: #000000;
-    background: #19406d;
+    background: #033d66;
     margin-right: 50px;
+    margin-bottom: 10px;
+    
+    
 }
 
 .product-item:hover .product-price .btn,
@@ -936,6 +942,7 @@ h1::after{
 
 .product-item .product-price .btn i {
     margin-right: 2px;
+    
 
     
 }
@@ -1033,7 +1040,7 @@ h1::after{
 .product-view .product-view-top {
     padding: 30px;
     margin-bottom: 30px;
-    background: #ffffff;
+    background: #f1ebeb;
 }
 
 .product-view .product-search {
@@ -1123,19 +1130,20 @@ h1::after{
 }
 
 .product-view .pagination {
-    margin: 0;
+    margin-top: 25px;
+    font-size: 20px;
 }
 
-.product-view .pagination .page-item .page-link {
-    color: #353535;
+.product-view .pagination .page-item .page-link { /* COLOR DE PAGINATION- BARRA PARA CAMBIAR LAS IMAGENES*/
+    color: #0c0a0a;
     background: transparent;
-    border-color: #353535;
+    border-color: #0e526d;
 }
 
 .product-view .pagination .page-item:hover .page-link,
 .product-view .pagination .page-item.active .page-link {
-    color: #6f61ff;
-    background: #000000;
+    color: #070708;
+    background: #eae7e7;
 }
 
 @media (max-width: 991.98px) {
@@ -1401,6 +1409,8 @@ h1::after{
 .sidebar-widget {
     padding: 30px;
     background: #ece9e9;
+   height: 350px;
+   
 }
 
 .sidebar-widget:not(:first-child) {
@@ -1414,9 +1424,10 @@ h1::after{
     margin-bottom: 15px;
     color: #080808;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
-.sidebar-widget.category {
+/*.sidebar-widget.category {
     margin: 0;
 }
 
@@ -1455,7 +1466,7 @@ h1::after{
 
 .sidebar-widget.category .navbar a:hover i {
     color: #353535;
-}
+}*/
 
 .sidebar-widget.brands ul {
     margin: 0;
@@ -1487,7 +1498,7 @@ h1::after{
 }
 
 .sidebar-widget.brands ul li a:hover {
-    color: #6f61ff;
+    color: #15666c;
 }
 
 .sidebar-widget.brands ul li a:hover::before {
@@ -1512,7 +1523,7 @@ h1::after{
     position: relative;
 }
 
-.sidebar-widget.image a {
+/*.sidebar-widget.image a {
     display: block;
     width: 100%;
     overflow: hidden;
@@ -1527,12 +1538,16 @@ h1::after{
     transform: scale(1.1);
     filter: blur(3px);
     -webkit-filter: blur(3px);
+}*/
+.sidebar-widget.tag{
+   padding-top: 30px;
+    margin-top: 10px;
+    height: 450px;
 }
-
 .sidebar-widget.tag a {
     display: inline-block;
-    margin: 0 0 4px 0;
-    padding: 3px 8px;
+    margin: 0 5px 6px 0;
+    padding: 3px 9px;
     font-size: 14px;
     color: #353535;
     background: #ffffff;
@@ -1542,9 +1557,10 @@ h1::after{
 }
 
 .sidebar-widget.tag a:hover {
+    
     color: #ffffff;
-    background: #6f61ff;
-    border-color: #6f61ff;
+    background:  #15666c;
+    border-color:  #15666c;
 }
 
 
@@ -2442,7 +2458,7 @@ h1::after{
 .footer .payment {
     padding-top: 25px;
     padding-bottom: 25px;
-    padding-left: 200px;
+    padding-left: 350px;
     border-top: 1px solid #64656490;
     
 }
@@ -2548,13 +2564,12 @@ h1::after{
 .iconocharla img{
     
     position:absolute;
-     top: 1860px;
+     top: 1940px;
      right: 50px;
     /*right: 50px;
     top: 1935px;*/
     
 }
-
 
 .iconocharla:hover{
 
