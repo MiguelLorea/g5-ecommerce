@@ -110,7 +110,6 @@
                                     </div>
                                 </div>
                             </div>
-<<<<<<< HEAD:carpeta-pagina tienda/product-list.php
                             
 
 
@@ -145,28 +144,25 @@
                                 <div class="product-item">
                                     <div class="product-title">
                                         <h4 class="card-title"><?php echo $f_moda['producto'] ?></h4>
-=======
-
-                            <div class="col-md-4">
-                                   <div class="product-item">
-                                        <div class="product-title">
-                                        
->>>>>>> b13199d29d3c8eb7dce86f8e1b929e4add6157c3:carpeta-pagina tienda/product-list.html
                                         <div class="ratting">
-                                            
-                                         </div>
-                                         </div>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
                                     <div class="product-image">
                                         <a href="product-detail.html">
                                             <img class="card-img-top" src="altadeinventario/admin/<?php echo $f_moda['foto'] ?>" width="200" height="200">
                                         </a>
                                         <div class="product-action">
-                                            
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
                                             <a href="#"><i class="fa fa-search"></i></a>
                                         </div>
                                     </div>
                                     <div class="product-price">
-<<<<<<< HEAD:carpeta-pagina tienda/product-list.php
                                  
                     <p class="card-text"><?php echo "$". number_format($f_moda['precio'], 2) ?></p>
                                         <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar ahora</a>
@@ -599,172 +595,18 @@
 
                         </div>
                         
-=======
-
-                                        <h3><span>nombre producto</span></h3>
-                                        <h3><span>$ 100</span></h3>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar</a>
-                      
-                                    </div>
-                                </div>
-                            </div>
-                           
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                     <div class="product-title">
-                                     
-                                     <div class="ratting">
-                                         
-                                      </div>
-                                 </div>
-                                 <div class="product-image">
-                                     <a href="product-detail.html">
-                                         <img src="img/product-1.jpg" alt="Product Image">
-                                     </a>
-                                     <div class="product-action">
-                                         
-                                         <a href="#"><i class="fa fa-search"></i></a>
-                                     </div>
-                                 </div>
-                                 <div class="product-price">
-
-                                     <h3><span>nombre producto</span></h3>
-                                     <h3><span>$ 100</span></h3>
-                                     <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar</a>
-                                     
-                                 </div>
-                             </div>
-                         </div>
-
-
-                         <div class="col-md-4">
-                            <div class="product-item">
-                                 <div class="product-title">
-                                 
-                                 <div class="ratting">
-                                     
-                            </div>
-                             </div>
-                             <div class="product-image">
-                                 <a href="product-detail.html">
-                                     <img src="img/product-1.jpg" alt="Product Image">
-                                 </a>
-                                 <div class="product-action">
-                                     
-                                     <a href="#"><i class="fa fa-search"></i></a>
-                                 </div>
-                             </div>
-                             <div class="product-price">
-
-                                 <h3><span>nombre producto</span></h3>
-                                 <h3><span>$ 100</span></h3>
-                                 <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar</a>
-                                 
-                                 </div>
-                              </div>
-                          </div>
-
-                          <div class="col-md-4">
-                            <div class="product-item">
-                                 <div class="product-title">
-                                 
-                                 <div class="ratting">
-                                     
-                            </div>
-                             </div>
-                             <div class="product-image">
-                                 <a href="product-detail.html">
-                                     <img src="img/product-1.jpg" alt="Product Image">
-                                 </a>
-                                 <div class="product-action">
-                                     
-                                     <a href="#"><i class="fa fa-search"></i></a>
-                                 </div>
-                             </div>
-                             <div class="product-price">
-
-                                 <h3><span>nombre producto</span></h3>
-                                 <h3><span>$ 100</span></h3>
-                                 <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar</a>
-                                 
-                                 </div>
-                               </div>
-                            </div>
-
-                            <div class="col-md-4">
-                                <div class="product-item">
-                                     <div class="product-title">
-                                    
-                                     <div class="ratting">
-                                         
-                                    </div>
-                                 </div>
-                                 <div class="product-image">
-                                     <a href="product-detail.html">
-                                         <img src="img/product-1.jpg" alt="Product Image">
-                                     </a>
-                                     <div class="product-action">
-                                         
-                                         <a href="#"><i class="fa fa-search"></i></a>
-                                     </div>
-                                 </div>
-                                 <div class="product-price">
-
-                                     <h3><span>nombre producto</span></h3>
-                                     <h3><span>$ 100</span></h3>
-                                     <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar</a>
-                                     
-                                    </div>
-                                 </div>
-                             </div>
-
-                             <div class="col-md-4">
-                                <div class="product-item">
-                                     <div class="product-title">
-                                     <!--<a href="#">Nombre Prod</a>-->
-                                     </hr>
-                                     <div class="ratting">
-                                         
-                                    </div>
-                                    </div>
-                                 <div class="product-image">
-                                     <a href="product-detail.html">
-                                         <img src="img/product-1.jpg" alt="Product Image">
-                                     </a>
-                                     <div class="product-action">
-                                         
-                                         <a href="#"><i class="fa fa-search"></i></a>
-                                     </div>
-                                 </div>
-                                 <div class="product-price">
-
-                                     <h3><span>nombre producto</span></h3>
-                                     <h3><span>$ 100</span></h3>
-                                     <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar</a>
-                                     
-                                 </div>
-                             </div>
-                         </div>
-
-                         
-
-                          
-
-                        </div> 
-
->>>>>>> b13199d29d3c8eb7dce86f8e1b929e4add6157c3:carpeta-pagina tienda/product-list.html
                         <!-- Pagination Start -->
-                         <div class="col-md-12">
+                        <div class="col-md-12">
                             <nav aria-label="Page navigation example">
                                 <ul class="pagination justify-content-center">
                                     <li class="page-item disabled">
-                                        <a class="page-link" href="#" tabindex="-1"><B>Anterior</B></a>
+                                        <a class="page-link" href="#" tabindex="-1">Anterior</a>
                                     </li>
-                                    <li class="page-item active"><a class="page-link" href="#"><B>1</B></a></li>
-                                    <li class="page-item"><a class="page-link" href="#"><B>2</B></a></li>
-                                    <li class="page-item"><a class="page-link" href="#"><B>3</B></a></li>
+                                    <li class="page-item active"><a class="page-link" href="#">1</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">2</a></li>
+                                    <li class="page-item"><a class="page-link" href="#">3</a></li>
                                     <li class="page-item">
-                                        <a class="page-link" href="#"><B>Siguiente</B></a>
+                                        <a class="page-link" href="#">Siguiente</a>
                                     </li>
                                 </ul>
                             </nav>
@@ -774,9 +616,114 @@
                     
                     <!-- Barra lateral empieza -->
                     <div class="col-lg-4 sidebar">
-                    
+                       <!-- <div class="sidebar-widget category">
+                            <h2 class="title">Categorias</h2>
+                            <nav class="navbar bg-light">
+                                <ul class="navbar-nav">
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-female"></i>Moda y Belleza</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-child"></i>Ropa para niños y bebés</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-tshirt"></i>Ropa de Hombre y Mujer</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-mobile-alt"></i>Gadgets y Accesorios</a>
+                                    </li>
+                                    <li class="nav-item">
+                                        <a class="nav-link" href="#"><i class="fa fa-microchip"></i>Tecnologia y Productos Electronicos</a>
+                                    </li>
+                                </ul>
+                            </nav>
+                        </div>
+                        
+                        <div class="sidebar-widget widget-slider">
+                            <div class="sidebar-slider normal-slider">
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Nombre Prod</a>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-10.jpg" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>99</h3>
+                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar ahora</a>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Nombre Prod</a>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-9.jpg" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>99</h3>
+                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar ahora</a>
+                                    </div>
+                                </div>
+                                <div class="product-item">
+                                    <div class="product-title">
+                                        <a href="#">Nombre Prod</a>
+                                        <div class="ratting">
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                            <i class="fa fa-star"></i>
+                                        </div>
+                                    </div>
+                                    <div class="product-image">
+                                        <a href="product-detail.html">
+                                            <img src="img/product-8.jpg" alt="Product Image">
+                                        </a>
+                                        <div class="product-action">
+                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
+                                            <a href="#"><i class="fa fa-heart"></i></a>
+                                            <a href="#"><i class="fa fa-search"></i></a>
+                                        </div>
+                                    </div>
+                                    <div class="product-price">
+                                        <h3><span>$</span>99</h3>
+                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar ahora</a>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>-->
+                        
                         <div class="sidebar-widget brands">
-                            <h2 class="title"><u>Nuestras Marcas </u></h2>
+                            <h2 class="title">Nuestras Marcas</h2>
                             <ul>
                                 <li><a href="#">Adidas </a><span>(45)</span></li>
                                 <li><a href="#">Nike </a><span>(34)</span></li>
@@ -788,7 +735,7 @@
                         </div>
                         
                         <div class="sidebar-widget tag">
-                            <h2 class="title"><u>Etiquetas</u></h2>
+                            <h2 class="title">Tags / Etiquetas</h2>
                             <a href="#">Pantalon</a>
                             <a href="#">Remera</a>
                             <a href="#">Sueter</a>
@@ -799,12 +746,7 @@
                             <a href="#">Vestido</a>
                         </div>
                     </div>
-                     <!--Barra lateral termina -->
-
-
-                      
-
-
+                    <!-- Barra lateral termina -->
                 </div>
             </div>
         </div>
@@ -825,126 +767,97 @@
         </div>-->
         <!-- Marcas termina -->
         
-       <!-- Footer Start -->
-       <div class="footer">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget">
-                        <h6><U><I>CONTACTANOS</I></U></h6>
-                        <div class="contact-info">
-                            <p><i class="fa fa-map-marker"></i>Rio Negro 77,Cordoba,ARG</p>
-                            <p><i class="fa fa-envelope"></i>Nuevamoda@gmail.com</p>
-                            <p><i class="fa fa-phone"></i>125674385</p>
-                            
-
-                        </div>
-                    </div>
-                </div>
-                
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget">
-                        <h6><U><I>REDES SOCIALES</I></U></h6>
-                        <div class="contact-info">
-                            <div class="social">
-                                <a href=""><i class=><img src="img/icons8-twitter-circled-32.png" alt=""></i></a><!--"fab fa-twitter"-->
-                                <a href=""><i class=><img src="img/icons8-facebook-nuevo-32.png" alt=""></i></a><!--"fab fa-facebook-f"-->
-                    
-                                <a href=""><i class=><img src="img/icons8-instagram-32.png" alt=""></i></a><!--"fab fa-instagram"-->
-                                <a href=""><i class=><img src="img/icons8-youtube-32.png" alt=""></i></a><!--"fab fa-youtube"-->
-
-                                 
-                                <a href="https://api.whatsapp.com/send?phone=3512047231&text=Hola,%20sean%20bienvenidos! "><i class=><img src="img/icons8-whatsapp-32.png" alt=""></i></a><!--"fab fa-youtube"-->
-                                 
-
-
-                                <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-                                <a href="https://api.whatsapp.com/send?phone=3512047231&text=Hola,%20sean%20bienvenidos!"
-                                 class="float" target="_blank">
-                                <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                </a>-->
+        <!-- Pie de pagina empieza -->
+        <div class="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Ponerse en contacto</h2>
+                            <div class="contact-info">
+                                <p><i class="fa fa-map-marker"></i>Rio Negro 77, Cordoba, ARG</p>
+                                <p><i class="fa fa-envelope"></i>soporte@ecommerce.com</p>
+                                <p><i class="fa fa-phone"></i>Contacto</p>
                             </div>
                         </div>
                     </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget">
-                        <h6><U><I>NOSOTROS</I></U></h6>
-                        <ul>
-                            <li><a href="#">Nuestros Locales</a></li>
-                            <li><a href="#">Politica de Privacidad</a></li>
-                            <li><a href="#">Terminos y Condiciones</a></li>
-                            
-                        </ul>
-                    </div>
-                </div>
-
-                <div class="col-lg-3 col-md-6">
-                    <div class="footer-widget">
-                        <h6><U><I>AYUDA</I></U></h6>
-                        <ul>
-                            <li><a href="#">Politica de Pagos</a></li>
-                            <li><a href="#">Politica de Envios</a></li>
-                            <li><a href="#">Politica de Devoluciones</a></li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            
-            <div class="row payment align-items-center">
-                <div class="col-md-6">
-                    <div class="payment-method">
-                        <h6>Medios de pago</h6>
-                        <img src="img/payment-method.png"  alt="Payment Method" />
-                    </div>
-                </div>
-            
-                
-            </div>
-
-            
-        </div>
-    </div>
-
-    <!-- Footer End -->
-    
-   <!-- Barra superior comienza -->
-   <div class="top-bar">
-    <div class="container-fluid">
-        <div class="row">
-            <div class="col-sm-6">
-           
-                
-            </div>
-            
-        </div>
-    </div>
-</div> 
-<!-- Barra superior acaba --> 
-
-
-    <!-- Footer Start -->
-    <div class="footer-bottom">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-6 copyright">
                     
-                    <p>Copyright &copy; <a href="#">Boutique@gmail.com</a>. Todos los derechos reservados</p>
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Redes</h2>
+                            <div class="contact-info">
+                                <div class="social">
+                                    <a href=""><i class="fab fa-twitter"></i></a>
+                                    <a href=""><i class="fab fa-facebook-f"></i></a>
+                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
+                                    <a href=""><i class="fab fa-instagram"></i></a>
+                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Informacion</h2>
+                            <ul>
+                                <li><a href="#">Sobre nosotros</a></li>
+                                <li><a href="#">Politica de Privacidad</a></li>
+                                <li><a href="#">Terminos y Condiciones</a></li>
+                            </ul>
+                        </div>
+                    </div>
+
+                    <div class="col-lg-3 col-md-6">
+                        <div class="footer-widget">
+                            <h2>Informacion de compra</h2>
+                            <ul>
+                                <li><a href="#">Politica de Pagos</a></li>
+                                <li><a href="#">Politica de Envios</a></li>
+                                <li><a href="#">Politica de Devoluciones</a></li>
+                            </ul>
+                        </div>
+                    </div>
                 </div>
-
-              
-              
-
+                
+                <div class="row payment align-items-center">
+                    <div class="col-md-6">
+                        <div class="payment-method">
+                            <h2>Aceptamos:</h2>
+                            <img src="img/payment-method.png" alt="Payment Method" />
+                        </div>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="payment-security">
+                            <h2>Pago seguro:</h2>
+                            <img src="img/godaddy.svg" alt="Payment Security" />
+                            <img src="img/norton.svg" alt="Payment Security" />
+                            <img src="img/ssl.svg" alt="Payment Security" />
+                        </div>
+                    </div>
+                </div>
             </div>
         </div>
-    </div>
-    <!-- Footer End -->       
-    
-    <!-- Back to Top -->
-    <!--<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>-->
+        <!-- Pie de pagina termina -->
+        
+        <!-- Pie de pagina boton empieza -->
+        <div class="footer-bottom">
+            <div class="container">
+                <div class="row">
+                    <div class="col-md-6 copyright">
+                        <p>Copyright &copy; <a href="#">E-Commerce ITSC</a>. Todos los derechos reservados</p>
+                    </div>
 
-
+                    <div class="col-md-6 template-by">		
+                        <p>Designed By Los Pibes</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <!-- Pie de pagina boton termina -->       
+        
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
         
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
