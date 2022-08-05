@@ -3,7 +3,7 @@
 -- https://www.phpmyadmin.net/
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 28-05-2022 a las 00:03:48
+-- Tiempo de generación: 06-08-2022 a las 00:12:10
 -- Versión del servidor: 10.4.20-MariaDB
 -- Versión de PHP: 7.3.29
 
@@ -33,6 +33,15 @@ CREATE TABLE `imagenes` (
   `clave_producto` varchar(100) NOT NULL,
   `ruta` varchar(100) NOT NULL
 ) ENGINE=InnoDB DEFAULT CHARSET=latin1;
+
+--
+-- Volcado de datos para la tabla `imagenes`
+--
+
+INSERT INTO `imagenes` (`id`, `clave`, `clave_producto`, `ruta`) VALUES
+(5, '8f16494b7c66b6d015935b6f872eb329331f147f', 'e325bd68881a56ecc9fc2f72835c95f6491700b6', 'fotos/8f16494b7c66b6d015935b6f872eb329331f147f8851.jpg'),
+(6, 'b5525c203d64ec90024977d972a88948193b28cd', 'e325bd68881a56ecc9fc2f72835c95f6491700b6', 'fotos/b5525c203d64ec90024977d972a88948193b28cd4341.jpg'),
+(7, 'c32268cf9cfca2d8a71e65cb603a53a4f3226c18', '72adf4107d81d69cc5ab6bb111986bb158c96f49', 'fotos/c32268cf9cfca2d8a71e65cb603a53a4f3226c18121.jpg');
 
 -- --------------------------------------------------------
 
@@ -90,7 +99,16 @@ INSERT INTO `inventario` (`id`, `clave`, `nombredeusuario`, `cuil`, `telefono`, 
 (33, '986891fe16035d1a99be3685a51abbf765fb2513', 'joel', 455640, 4102548, 'ELECTRONICA', 'av ssaas', 'dnjknas', 'foto_producto/producto.png'),
 (34, 'c7149d2711e51a014483469b8269e265a11050fe', 'drfgtdf', 543645, 564564, 'MODA', '54645', '64564', 'foto_producto/producto.png'),
 (35, '868f3a6905c915061c0013cf32f33303df275ab3', '245', 545, 545, 'MODA', '2541', 'yhg', 'foto_producto/producto.png'),
-(36, '00a38ddf5d7ec4a82726a7a739ee8eafb9592aa8', 'Miguel', 56125484, 54084, 'MODA', '0584', '540', 'foto_producto/producto.png');
+(36, '00a38ddf5d7ec4a82726a7a739ee8eafb9592aa8', 'Miguel', 56125484, 54084, 'MODA', '0584', '540', 'foto_producto/producto.png'),
+(37, '241849eb27f562c55dd124cef151c8fde1e3d4bc', 'fg', 5445, 434, 'ELECTRONICA', '454', '544', 'foto_producto/producto.png'),
+(38, '4c33914bc8dc15df4ec3faa5c8f46123fe4540ae', 'fdg', 5464, 5645, 'JOYERIA', '54645', '64', ''),
+(39, 'e325bd68881a56ecc9fc2f72835c95f6491700b6', 'cvgdfg', 5464, 56456, 'ELECTRONICA', '546', '564', 'foto_producto/e325bd68881a56ecc9fc2f72835c95f6491700b6.jpg'),
+(40, 'a04e77299976cd9ac51ef0e97475e73dfd08f2e6', 'cz5x214', 1405445, 5405458, 'MODA', '21425', '0212', 'foto_producto/a04e77299976cd9ac51ef0e97475e73dfd08f2e6.jpg'),
+(41, '06c78844513bfcdc0d99d6fed936073b0de84d06', 'pepe', 202154128, 2147483647, 'MODA', 'maipu 14', 'nombre toienda', 'foto_producto/06c78844513bfcdc0d99d6fed936073b0de84d06.jpg'),
+(42, '3c1e5f9b60ea89d8d22b329dcf672baef6d8ac7f', '240584', 1414122, 154145, 'MODA', '15145', '14514551', 'foto_producto/producto.png'),
+(43, '19acb1a7044b7deef9d96657ea039b56a444429f', '240584', 1414122, 154145, 'MODA', '15145', '14514551', 'foto_producto/producto.png'),
+(44, 'da96c7f172d6e4d261fb768eb9f6856d419c902c', '2540512', 40554104, 54054, 'MODA', '0545', '5045405', 'foto_producto/producto.png'),
+(45, '9963e54151576493b03a4d31796c73a8f4afce58', 'kjdfghkj', 10, 120, 'MODA', 'cvdfvg', '', 'foto_producto/producto.png');
 
 -- --------------------------------------------------------
 
@@ -122,7 +140,58 @@ INSERT INTO `login` (`usuario`, `password`) VALUES
 ('2', '2'),
 ('Micky', '1111'),
 ('joel', 'jaja'),
-('Miguel', '1');
+('Miguel', '1'),
+('joel1', '1'),
+('Pepe1', '1'),
+('pepe2', '1'),
+('aa', 'aa');
+
+-- --------------------------------------------------------
+
+--
+-- Estructura de tabla para la tabla `productos`
+--
+
+CREATE TABLE `productos` (
+  `id` int(10) NOT NULL,
+  `clave` varchar(100) NOT NULL,
+  `producto` varchar(100) NOT NULL,
+  `cantidad` int(10) NOT NULL,
+  `precio` decimal(10,0) NOT NULL,
+  `categoria` varchar(50) NOT NULL,
+  `descripcion` text NOT NULL,
+  `foto` varchar(100) NOT NULL
+) ENGINE=InnoDB DEFAULT CHARSET=utf8mb4;
+
+--
+-- Volcado de datos para la tabla `productos`
+--
+
+INSERT INTO `productos` (`id`, `clave`, `producto`, `cantidad`, `precio`, `categoria`, `descripcion`, `foto`) VALUES
+(1, '56a19763dcaf1b64210026d57d29f41dad019f23', 'vbghn', 54345, '345', 'JOYERIA', '4534', ''),
+(2, '093123b1ae8542c6566c89777dd2f891ce669a60', '563', 5, '20', 'JOYERIA', 'ghfj', ''),
+(3, '81b42a843e248ff5bf58480ac71e0215586e8bba', 'bvgnvgn', 5324, '5343', 'MODA', 'khm', 'foto_producto/producto.png'),
+(4, '96a70c30b4541e6181917d656c0c142e64b1815a', 'bhhjj', 3232, '32323', 'MODA', 'jhikk', 'foto_producto/producto.png'),
+(5, '52e7f3dc89da6bb4793536d204c3fb06036820e0', '0121', 54045, '50454', 'MODA', '545fdfghhj', 'foto_producto/producto.png'),
+(6, '931d6889f41915249f9383aa9b7b569278cacc39', '0121', 54045, '50454', 'MODA', '545fdfghhj', 'foto_producto/producto.png'),
+(7, '535b8a33bb9fcfd5af70a8911fbba1eb4d859a85', '0121', 54045, '50454', 'MODA', '545fdfghhj', 'foto_producto/producto.png'),
+(8, '8bd31cdfd84528f91f0fa08316c03a21346e0029', 'martillo', 200, '120', 'ELECTRONICA', '25f4ds54d1', 'foto_producto/producto.png'),
+(9, 'e68d4ef6b0ccbb1e2309f50727afe6cea169c5b4', 'producto', 254, '250', 'ELECTRONICA', '4545saas', 'foto_producto/producto.png'),
+(10, 'afe619b0754c3c874f42a8258bd67437a6a789d8', 'perla', 558, '120', 'JOYERIA', 'dsfs', 'foto_producto/producto.png'),
+(11, 'd1144ffc1d01174a0d3622de670d61f130bd4e32', 'Reloj', 54, '4504', 'RELOJES', 'dghgff&ntilde;', 'foto_producto/producto.png'),
+(12, '5b8261cec375d752ee2af2673eab90cb604ba5f8', 'Remera Spun Variedad De Colores', 200, '3500', 'MODA', 'remera ', 'foto_producto/5b8261cec375d752ee2af2673eab90cb604ba5f8.jpg'),
+(13, '855ad96068b645d4de40a9ec1b07e6c6cb2bcf0d', 'Remera de hombre VANS CLASSIC ', 200, '5990', 'MODA', 'Remera de hombre VANS CLASSIC ', 'foto_producto/855ad96068b645d4de40a9ec1b07e6c6cb2bcf0d.jpg'),
+(14, '7298c5b27b5c67021487cabd1ea76ed668814769', 'Remera Vamos Argentina', 556, '4800', 'MODA', '\r\nirarte\r\nRemera Vamos Argentina', 'foto_producto/7298c5b27b5c67021487cabd1ea76ed668814769.jpg'),
+(15, 'e8d12f69c409a9290c442e14ccd44b6f895db0d2', 'Xbox one', 1269, '50000', 'ELECTRONICA', 'Xbox one', 'foto_producto/e8d12f69c409a9290c442e14ccd44b6f895db0d2.jpg'),
+(16, '3313cfb02eaa5952da8adf10131e919732f2b8fb', 'mando xbox', 212514, '21500', 'ELECTRONICA', 'mando xbox', 'foto_producto/3313cfb02eaa5952da8adf10131e919732f2b8fb.jpg'),
+(17, '72adf4107d81d69cc5ab6bb111986bb158c96f49', 'mando economico', 2545, '4800', 'ELECTRONICA', 'mando xbox', 'foto_producto/72adf4107d81d69cc5ab6bb111986bb158c96f49.jpg'),
+(18, 'd2ed4e02f0f4742d40e1de0ab771f15601e7b958', 'Anillos', 55, '70000', 'JOYERIA', 'Anillos', 'foto_producto/d2ed4e02f0f4742d40e1de0ab771f15601e7b958.jpg'),
+(19, '494404ae2d2fd219e7e266a67fa34e3e8a48b0b8', 'Anillo 2', 545, '80000', 'JOYERIA', 'Anillo 2', 'foto_producto/494404ae2d2fd219e7e266a67fa34e3e8a48b0b8.jpg'),
+(20, '905ab9811bede5cf6f3ce6b42495a8c42870f379', 'Pulsera ', 2541, '5950', 'JOYERIA', 'Pulsera ', 'foto_producto/905ab9811bede5cf6f3ce6b42495a8c42870f379.jpg'),
+(21, 'c5e8f66926dfbc3cbc914b45133ef61772cca653', 'Smartwatches: en oferta al mejor precio', 254254, '25000', 'RELOJES', 'Smartwatches: en oferta al mejor precio', 'foto_producto/c5e8f66926dfbc3cbc914b45133ef61772cca653.jpg'),
+(22, '9aed3be2bdd59d662c7e9d578b3445bddf7246a7', 'Reloj inteligente 2022 hombre mujer', 2545, '20000', 'RELOJES', 'Reloj inteligente 2022  hombre mujer', 'foto_producto/9aed3be2bdd59d662c7e9d578b3445bddf7246a7.jpg'),
+(23, '7c1add04a0a98a287b8b658f607685ae092cdcd5', 'Relojes para hombre y mujer', 1996, '12000', 'RELOJES', 'Relojes para hombre y mujer', 'foto_producto/7c1add04a0a98a287b8b658f607685ae092cdcd5.jpg'),
+(24, '032b72b0777f0b5690312c75ea18bff8e3ec2952', 'remera chica', 323, '699', 'MODA', 'remera chica', 'foto_producto/032b72b0777f0b5690312c75ea18bff8e3ec2952.jpg');
 
 --
 -- Índices para tablas volcadas
@@ -141,6 +210,12 @@ ALTER TABLE `inventario`
   ADD PRIMARY KEY (`id`);
 
 --
+-- Indices de la tabla `productos`
+--
+ALTER TABLE `productos`
+  ADD PRIMARY KEY (`id`);
+
+--
 -- AUTO_INCREMENT de las tablas volcadas
 --
 
@@ -148,13 +223,19 @@ ALTER TABLE `inventario`
 -- AUTO_INCREMENT de la tabla `imagenes`
 --
 ALTER TABLE `imagenes`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=5;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=8;
 
 --
 -- AUTO_INCREMENT de la tabla `inventario`
 --
 ALTER TABLE `inventario`
-  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=37;
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=46;
+
+--
+-- AUTO_INCREMENT de la tabla `productos`
+--
+ALTER TABLE `productos`
+  MODIFY `id` int(10) NOT NULL AUTO_INCREMENT, AUTO_INCREMENT=25;
 COMMIT;
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
