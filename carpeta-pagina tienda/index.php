@@ -146,59 +146,30 @@ if ($busqueda === null) {
 
 
 
+<div class="col-md-6">
+
+<form class="form-inline" action="buscar.php" method="GET">
+
+<div class="search">
+    <label for="inputPassword2" class="sr-only">Buscar</label>
+    <input name="busqueda" type="text" class="form-control" id="inputPassword2" placeholder="Buscar">
 
 
 
-
-
-
-
-
-
+                           <button><i class=""><script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/pvbutfdk.json" trigger="hover" style="width:30px;height:30px">
+                             </lord-icon></i></button> <!--lupa con movimiento-->
 
 
  
-<form class="form-inline" action="buscar.php" method="GET">
-  <div class="form-group mx-sm-3 mb-2">
-    <label for="inputPassword2" class="sr-only">Buscar</label>
-    <input name="busqueda" type="text" class="form-control" id="inputPassword2" placeholder="Buscar">
-  </div>
-  <button type="submit" class="btn btn-primary mb-2">Buscar ahora</button>
-</form>
-    
-        </thead>
-    
-      
-    
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-                    <div class="col-md-6">
-                        <div class="search">
-                            <input type="text" placeholder="Buscar">
-                            
-                        
-                           <button><i class=><script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-                            <lord-icon
-                           src="https://cdn.lordicon.com/pvbutfdk.json"
-                           trigger="hover"
-                               style="width:30px;height:30px">
-                             </lord-icon></i></button> <!--lupa con movimiento-->
 
                             
                         </div>
+                        
+    </form>
                     </div>
+
+    
                     
                      <div class="colores">
                        <select name="fondo" id="fondo" onchange="cambiarfondo(this)" class="color">

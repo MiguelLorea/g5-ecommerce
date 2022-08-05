@@ -157,18 +157,30 @@ if ($busqueda === null) {
 
 
 
- 
+<div class="col-md-6">
+
 <form class="form-inline" action="" method="GET">
-  <div class="form-group mx-sm-3 mb-2">
+
+<div class="search">
     <label for="inputPassword2" class="sr-only">Buscar</label>
     <input name="busqueda" type="text" class="form-control" id="inputPassword2" placeholder="Buscar">
-  </div>
-  <button type="submit" class="btn btn-primary mb-2">Buscar ahora</button>
-</form>
-    
-    
-        </div>
 
+
+
+                           <button><i class=""><script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/pvbutfdk.json" trigger="hover" style="width:30px;height:30px">
+                             </lord-icon></i></button> <!--lupa con movimiento-->
+
+
+ 
+
+                            
+                        </div>
+                        
+    </form>
+                    </div>
+
+    
 
 
 
@@ -250,6 +262,21 @@ if ($busqueda === null) {
 
 
 
+
+
+
+
+</div>
+
+
+
+<center>
+
+<p>no se han encontrado mas resultados</p>
+
+
+</center>
+</div></div>
         
         <!-- Footer Start -->
         <div class="footer">
