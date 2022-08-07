@@ -304,19 +304,22 @@ h2 {
     top: 0;
     width: 100%;
     box-shadow: 0px 4px 5px rgba(0, 0, 0,.5);
+    
    
 }
 
 @media (min-width: 992px) {
     .nav .container-fluid {
-        padding-left: 52px;
-        padding-right: 52px;
+        padding-left: 10px;
+        padding-right: 10px;
+        
     }
 }
 
 .nav .navbar {
     height: 100%;
     padding: 10px 10px;
+   
 }
 
 .nav .dropdown-menu { /* mi cuenta*/
@@ -331,6 +334,7 @@ h2 {
         margin-top: 10px;
         margin-left: 25px;
         color: #2106b9;
+
         
     }  
 .nav .dropdown-menu a.active {
@@ -649,25 +653,21 @@ h1::after{
     position: relative;
     width: 100%;
     
+    
 }
 
 .breadcrumb-wrap .breadcrumb li {
     margin: 0;
-    padding: 0;
     color:#000000;
-    padding-left: 450px;
-    font-size: 27px;
+    padding-left: 250px;
+    font-size: 24px;
 
 }
-.breadcrumb {
 
-    background-color: #d6fbb5;
+.breadcrumb{
+    background-color:rgb(174, 255, 229);
     
 }
-
-
-
-
 
 /**********************************/
 /********** Category CSS **********/
@@ -783,19 +783,22 @@ h1::after{
 /**********************************/
 /******** Product Item CSS ********/ /* productos*/
 /**********************************/
+
+
 .product-item {
     position: relative;
+   
 }
 
 .product-item .product-title { /* color de arriba del cuadrado de la imagen*/
-    /*padding: 15px;
+    padding: 15px;
     text-align: center;
-    background:rgb(150, 149, 149);
-   /* transition: all .3s;*/
+    background:#c1bfbf;
+    transition: all .3s;
 }
 
 .product-item:hover .product-title { /*cuando paso el mouse sobre la imagen el cuadrado*/
-    background: #6f61ff;
+    background:#19406d;
 }
 
 .product-item .product-title a {
@@ -803,11 +806,11 @@ h1::after{
    /* width: 100%;*/
 }
 
-.product-item .product-title a { /*color del nombre de los productos*/
+/*.product-item .product-title a { /*color del nombre de los productos
     margin-bottom: 5px;
     color: #ad0909;
     font-size: 18px;
-}
+}*/
 
 
 
@@ -905,19 +908,24 @@ h1::after{
 }*/
 
 .product-item:hover .product-price {
-    background: #6f61ff;
+    background: #19406d;
 }
 
 .product-item .product-price h3 {
     display: inline-block;
     color: #ffffff;
     margin: 0;
+    font-size: 15px;
 }
 
 .product-item .product-price h3 span {
-    font-size: 17px;
+    
 }
+.product-item .product-price p{
 
+    font-size: 20px;
+    text-align: center;
+}
 .product-item .product-price .btn {
     float: right;
     border: none;
@@ -1399,13 +1407,14 @@ h1::after{
 /********** Sidebar CSS ***********/ /* barra lateral*/
 /**********************************/
 .sidebar-widget {
+   
     padding: 30px;
     background: #ece9e9;
 }
 
-.sidebar-widget:not(:first-child) {
+/*.sidebar-widget:not(:first-child) {
     padding-top: 0;
-}
+}*/
 
 .sidebar-widget .title { /*titulo*/
     position: relative;
@@ -1414,9 +1423,10 @@ h1::after{
     margin-bottom: 15px;
     color: #080808;
     font-family: Georgia, 'Times New Roman', Times, serif;
+    text-align: center;
 }
 
-.sidebar-widget.category {
+/*.sidebar-widget.category {
     margin: 0;
 }
 
@@ -1455,16 +1465,18 @@ h1::after{
 
 .sidebar-widget.category .navbar a:hover i {
     color: #353535;
-}
+}*/
 
 .sidebar-widget.brands ul {
     margin: 0;
     padding: 0;
     list-style: none;
+    
 }
 
 .sidebar-widget.brands ul li {
-    margin-bottom: 12px; 
+    margin-bottom: 40px; 
+    
 }
 
 .sidebar-widget.brands ul li:last-child {
@@ -1487,7 +1499,7 @@ h1::after{
 }
 
 .sidebar-widget.brands ul li a:hover {
-    color: #6f61ff;
+    color: #194f8c;
 }
 
 .sidebar-widget.brands ul li a:hover::before {
@@ -1529,10 +1541,15 @@ h1::after{
     -webkit-filter: blur(3px);
 }
 
+.sidebar-widget.tag{
+    margin-top: 50px;
+    padding-top: 30px;
+    text-align: center;
+}
 .sidebar-widget.tag a {
     display: inline-block;
-    margin: 0 0 4px 0;
-    padding: 3px 8px;
+    margin: 0 0 15px 0;
+    padding: 10px 10px;
     font-size: 14px;
     color: #353535;
     background: #ffffff;
@@ -1543,8 +1560,8 @@ h1::after{
 
 .sidebar-widget.tag a:hover {
     color: #ffffff;
-    background: #6f61ff;
-    border-color: #6f61ff;
+    background: #194f8c;
+    border-color:#194f8c ;
 }
 
 
@@ -2548,7 +2565,7 @@ h1::after{
 .iconocharla img{
     
     position:absolute;
-     top: 1860px;
+     top: 2000px;
      right: 50px;
     /*right: 50px;
     top: 1935px;*/

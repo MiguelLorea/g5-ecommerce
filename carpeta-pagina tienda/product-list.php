@@ -57,7 +57,7 @@
         <div class="breadcrumb-wrap">
             <div class="container-fluid">
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item active"><b>Lista de productos</b></li>
+                    <li class="breadcrumb-item active"><b>--------- LISTA DE PRODUCTOS ---------</b></li>
                 </ul>
             </div>
         </div>
@@ -131,7 +131,7 @@
         <div class="breadcrumb-wrap">
            
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item active"><b>Moda</b></li>
+                    <li class="breadcrumb-item active"><b> MODA </b></li>
                 </ul>
         
         </div>
@@ -156,13 +156,9 @@
                             <div class="col-md-4">
                                 <div class="product-item">
                                     <div class="product-title">
-                                        <h4 class="card-title"><?php echo $f_moda['producto'] ?></h4>
+                                        <h6 class="card-title"><b><?php echo $f_moda['producto'] ?></b></h6>
                                         <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
+                                            
                                         </div>
                                     </div>
                                     <div class="product-image">
@@ -170,15 +166,14 @@
                                             <img class="card-img-top" src="altadeinventario/admin/<?php echo $f_moda['foto'] ?>" width="200" height="200">
                                         </a>
                                         <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
+                                           
+                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
                                         </div>
                                     </div>
                                     <div class="product-price">
                                  
-                    <p class="card-text"><?php echo "$". number_format($f_moda['precio'], 2) ?></p>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar ahora</a>
+                                     <p class="card-text"><b><?php echo "$". number_format($f_moda['precio'], 2) ?></b></p>
+                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar </a>
                                     </div><br>
 
                                 </div>
@@ -209,7 +204,7 @@
         <div class="breadcrumb-wrap">
            
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item active"><b>ELECTRONICA</b></li>
+                    <li class="breadcrumb-item active"><b> ELECTRONICA </b></li>
                 </ul>
         
         </div>
@@ -233,29 +228,22 @@
                             <div class="col-md-4">
                                 <div class="product-item">
                                     <div class="product-title">
-                                        <h4 class="card-title"><?php echo $f_elec['producto'] ?></h4>
-                                        <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                        </div>
+                                        <h6 class="card-title"><b><?php echo $f_elec['producto'] ?> </b></h6>
+                                        
                                     </div>
                                     <div class="product-image">
                                         <a href="product-detail.html">
                                             <img class="card-img-top" src="altadeinventario/admin/<?php echo $f_elec['foto'] ?>" width="200" height="200">
                                         </a>
                                         <div class="product-action">
-                                            <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
+                                            
+                                        <a href="#"><i class="fa fa-cart-plus"></i></a>
                                         </div>
                                     </div>
                                     <div class="product-price">
                                  
-                    <p class="card-text"><?php echo "$". number_format($f_elec['precio'], 2) ?></p>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar ahora</a>
+                    <p class="card-text"><b><?php echo "$". number_format($f_elec['precio'], 2) ?></b></p>
+                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar </a>
                                     </div>
 
 <br>
@@ -285,7 +273,7 @@
         <div class="breadcrumb-wrap">
            
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item active"><b>JOYERIA</b></li>
+                    <li class="breadcrumb-item active"><b> JOYERIA </b></li>
                 </ul>
         
         </div>
@@ -309,13 +297,9 @@
                             <div class="col-md-4">
                                 <div class="product-item">
                                     <div class="product-title">
-                                        <h4 class="card-title"><?php echo $f_joy['producto'] ?></h4>
+                                        <h6 class="card-title"><b><?php echo $f_joy['producto'] ?> </b></h6>
                                         <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
+                                            
                                         </div>
                                     </div>
                                     <div class="product-image">
@@ -324,14 +308,13 @@
                                         </a>
                                         <div class="product-action">
                                             <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
+                                            
                                         </div>
                                     </div>
                                     <div class="product-price">
                                  
-                    <p class="card-text"><?php echo "$". number_format($f_joy['precio'], 2) ?></p>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar ahora</a>
+                    <p class="card-text"><b><?php echo "$". number_format($f_joy['precio'], 2) ?></b ></p>
+                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar </a>
                                     </div><br>
 
                                 </div>
@@ -362,7 +345,7 @@
         <div class="breadcrumb-wrap">
            
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item active"><b>RELOJES</b></li>
+                    <li class="breadcrumb-item active"><b> RELOJES </b></li>
                 </ul>
         
         </div>
@@ -386,13 +369,9 @@
                             <div class="col-md-4">
                                 <div class="product-item">
                                     <div class="product-title">
-                                        <h4 class="card-title"><?php echo $f_rel['producto'] ?></h4>
+                                        <h6 class="card-title"><b><?php echo $f_rel['producto'] ?> </b></h6>
                                         <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
+                                          
                                         </div>
                                     </div>
                                     <div class="product-image">
@@ -401,14 +380,13 @@
                                         </a>
                                         <div class="product-action">
                                             <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
+                                         
                                         </div>
                                     </div>
                                     <div class="product-price">
                                  
-                    <p class="card-text"><?php echo "$". number_format($f_rel['precio'], 2) ?></p>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar ahora</a>
+                    <p class="card-text"> <b><?php echo "$". number_format($f_rel['precio'], 2) ?></b></p>
+                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar </a>
                                     </div><br>
 
                                 </div>
@@ -439,9 +417,10 @@
         <div class="breadcrumb-wrap">
            
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item active"><b>HOGAR</b></li>
+                    <li class="breadcrumb-item active"><b> HOGAR </b></li>
                 </ul>
-        
+              
+
         </div>
         <!-- Breadcrumb End -->
      
@@ -463,13 +442,9 @@
                             <div class="col-md-4">
                                 <div class="product-item">
                                     <div class="product-title">
-                                        <h4 class="card-title"><?php echo $f_hogar['producto'] ?></h4>
+                                        <h6 class="card-title"><?php echo $f_hogar['producto'] ?></h6>
                                         <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
+                                           
                                         </div>
                                     </div>
                                     <div class="product-image">
@@ -478,14 +453,13 @@
                                         </a>
                                         <div class="product-action">
                                             <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
+                                           
                                         </div>
                                     </div>
                                     <div class="product-price">
                                  
                     <p class="card-text"><?php echo "$". number_format($f_hogar['precio'], 2) ?></p>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar ahora</a>
+                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar </a>
                                     </div><br>
 
                                 </div>
@@ -515,7 +489,7 @@
         <div class="breadcrumb-wrap">
            
                 <ul class="breadcrumb">
-                    <li class="breadcrumb-item active"><b>ZAPATOS</b></li>
+                    <li class="breadcrumb-item active"><b>ZAPATOS </b></li>
                 </ul>
         
         </div>
@@ -539,13 +513,9 @@
                             <div class="col-md-4">
                                 <div class="product-item">
                                     <div class="product-title">
-                                        <h4 class="card-title"><?php echo $f_zapatos['producto'] ?></h4>
+                                        <h6 class="card-title"><?php echo $f_zapatos['producto'] ?></h6>
                                         <div class="ratting">
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
-                                            <i class="fa fa-star"></i>
+                                            
                                         </div>
                                     </div>
                                     <div class="product-image">
@@ -554,14 +524,13 @@
                                         </a>
                                         <div class="product-action">
                                             <a href="#"><i class="fa fa-cart-plus"></i></a>
-                                            <a href="#"><i class="fa fa-heart"></i></a>
-                                            <a href="#"><i class="fa fa-search"></i></a>
+                                            
                                         </div>
                                     </div>
                                     <div class="product-price">
                                  
                     <p class="card-text"><?php echo "$". number_format($f_zapatos['precio'], 2) ?></p>
-                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar ahora</a>
+                                        <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar </a>
                                     </div><br>
 
                                 </div>
@@ -748,7 +717,7 @@
                         </div>
                         
                         <div class="sidebar-widget tag">
-                            <h2 class="title">Tags / Etiquetas</h2>
+                            <h2 class="title">Etiquetas</h2>
                             <a href="#">Pantalon</a>
                             <a href="#">Remera</a>
                             <a href="#">Sueter</a>
@@ -780,31 +749,44 @@
         </div>-->
         <!-- Marcas termina -->
         
-        <!-- Pie de pagina empieza -->
+              <!-- Footer Start -->
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-widget">
-                            <h2>Ponerse en contacto</h2>
+                            <h6><U><I>CONTACTANOS</I></U></h6>
                             <div class="contact-info">
-                                <p><i class="fa fa-map-marker"></i>Rio Negro 77, Cordoba, ARG</p>
-                                <p><i class="fa fa-envelope"></i>soporte@ecommerce.com</p>
-                                <p><i class="fa fa-phone"></i>Contacto</p>
+                                <p><i class="fa fa-map-marker"></i>Rio Negro 77,Cordoba,ARG</p>
+                                <p><i class="fa fa-envelope"></i>Nuevamoda@gmail.com</p>
+                                <p><i class="fa fa-phone"></i>125674385</p>
+                                
+
                             </div>
                         </div>
                     </div>
                     
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-widget">
-                            <h2>Redes</h2>
+                            <h6><U><I>REDES SOCIALES</I></U></h6>
                             <div class="contact-info">
                                 <div class="social">
-                                    <a href=""><i class="fab fa-twitter"></i></a>
-                                    <a href=""><i class="fab fa-facebook-f"></i></a>
-                                    <a href=""><i class="fab fa-linkedin-in"></i></a>
-                                    <a href=""><i class="fab fa-instagram"></i></a>
-                                    <a href=""><i class="fab fa-youtube"></i></a>
+                                    <a href=""><i class=><img src="img/icons8-twitter-circled-32.png" alt=""></i></a><!--"fab fa-twitter"-->
+                                    <a href=""><i class=><img src="img/icons8-facebook-nuevo-32.png" alt=""></i></a><!--"fab fa-facebook-f"-->
+                        
+                                    <a href=""><i class=><img src="img/icons8-instagram-32.png" alt=""></i></a><!--"fab fa-instagram"-->
+                                    <a href=""><i class=><img src="img/icons8-youtube-32.png" alt=""></i></a><!--"fab fa-youtube"-->
+
+                                     
+                                    <a href="https://api.whatsapp.com/send?phone=3512047231&text=Hola,%20sean%20bienvenidos! "><i class=><img src="img/icons8-whatsapp-32.png" alt=""></i></a><!--"fab fa-youtube"-->
+                                     
+
+
+                                    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
+                                    <a href="https://api.whatsapp.com/send?phone=3512047231&text=Hola,%20sean%20bienvenidos!"
+                                     class="float" target="_blank">
+                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
+                                    </a>-->
                                 </div>
                             </div>
                         </div>
@@ -812,18 +794,19 @@
 
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-widget">
-                            <h2>Informacion</h2>
+                            <h6><U><I>NOSOTROS</I></U></h6>
                             <ul>
-                                <li><a href="#">Sobre nosotros</a></li>
+                                <li><a href="#">Nuestros Locales</a></li>
                                 <li><a href="#">Politica de Privacidad</a></li>
                                 <li><a href="#">Terminos y Condiciones</a></li>
+                                
                             </ul>
                         </div>
                     </div>
 
                     <div class="col-lg-3 col-md-6">
                         <div class="footer-widget">
-                            <h2>Informacion de compra</h2>
+                            <h6><U><I>AYUDA</I></U></h6>
                             <ul>
                                 <li><a href="#">Politica de Pagos</a></li>
                                 <li><a href="#">Politica de Envios</a></li>
@@ -836,38 +819,83 @@
                 <div class="row payment align-items-center">
                     <div class="col-md-6">
                         <div class="payment-method">
-                            <h2>Aceptamos:</h2>
-                            <img src="img/payment-method.png" alt="Payment Method" />
+                            <h6>Medios de pago</h6>
+                            <img src="img/payment-method.png"  alt="Payment Method" />
                         </div>
                     </div>
-                    <div class="col-md-6">
+                
+                    
+                   <!--<div class="col-md-6">
                         <div class="payment-security">
-                            <h2>Pago seguro:</h2>
+                            <h6>Pago seguro:</h6>
                             <img src="img/godaddy.svg" alt="Payment Security" />
                             <img src="img/norton.svg" alt="Payment Security" />
                             <img src="img/ssl.svg" alt="Payment Security" />
                         </div>
-                    </div>
+                    </div>-->
                 </div>
+
+                
+              
+                
+
+
+             
+
             </div>
         </div>
-        <!-- Pie de pagina termina -->
+
+       
+       
         
-        <!-- Pie de pagina boton empieza -->
+    
+        <!-- Footer End -->
+        
+       <!-- Barra superior comienza -->
+       <div class="top-bar">
+        <div class="container-fluid">
+            <div class="row">
+                <div class="col-sm-6">
+                    
+                   <!-- <div class="banner" >
+
+                    
+                        <p><b>ENVIOS GRATIS A TODO EL PAIS</b> </p>
+                        
+                        <p><b>3 Y 6 CUOTAS SIN INTERES</b></p> 
+                    
+                        <p><b>HASTA 40% OFF!</b></p> 
+
+                    </div>-->
+                    
+                </div>
+                
+            </div>
+        </div>
+    </div> 
+    <!-- Barra superior acaba --> 
+
+
+        <!-- Footer Start -->
         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 copyright">
-                        <p>Copyright &copy; <a href="#">E-Commerce ITSC</a>. Todos los derechos reservados</p>
+                        
+                        <p>Copyright &copy; <a href="#">Boutique@gmail.com</a>. Todos los derechos reservados</p>
                     </div>
 
-                    <div class="col-md-6 template-by">		
+                    <!--<div class="col-md-6 template-by">		
                         <p>Designed By Los Pibes</p>
-                    </div>
+                    </div>-->
+
+                   <!--charla-->
+                  
+
                 </div>
             </div>
         </div>
-        <!-- Pie de pagina boton termina -->       
+        <!-- Footer End -->  
         
         <!-- Back to Top -->
         <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>

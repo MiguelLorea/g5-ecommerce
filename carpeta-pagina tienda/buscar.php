@@ -375,19 +375,6 @@ if ($busqueda === null) {
         </div>
 
        
-        <div class="iconocharla">
-         
-         <img src="img/GIF-EO-150x150.gif">
-           <!-- <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-            <lord-icon
-           src="https://cdn.lordicon.com/mjmrmyzg.json"
-           trigger="hover"
-            style="width:250px;height:80px">
-           </lord-icon>-->
-
-           <span class="tooltip-box">¿como podemos ayudarte?</span>
-
-        </div>
         
     
         <!-- Footer End -->

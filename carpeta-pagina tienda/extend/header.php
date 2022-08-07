@@ -51,7 +51,7 @@
                             <!--<a href="product-detail.html" class="nav-item nav-link">Detalles del producto</a>-->
                             <a href="" class="nav-item nav-link "> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Compras</a>
                             <a href="" class="nav-item nav-link"><i class="fa fa-truck" aria-hidden="true"></i>  Envios</a>
-                             <a href="altadeinventario/admin/inventario.php" class="nav-item nav-link"><i class="fa fa-truck" aria-hidden="true"></i>Subir productos</a>
+                             <a href="altadeinventario/admin/inventario.php" class="nav-item nav-link"><i class="fa fa-truck" aria-hidden="true"></i> Subir productos</a>
                             <!--<a href="my-account.html" class="nav-item nav-link"><a href="index.html">
                                 <img src="img/logo de pagina.jpg" alt= "Logo">
                             </a></a>-->

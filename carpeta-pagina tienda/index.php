@@ -84,7 +84,7 @@ if ($busqueda === null) {
                         <div class="navbar-nav mr-auto ">
                             <a href= "" class=" nav-item nav-link"></span><i class="fa fa-home" aria-hidden="true"></i>  Inicio</a> 
                             <a href="product-list.php" class="nav-item nav-link "> <i class="fa fa-archive" aria-hidden="true"></i> Productos</a>
-                            <a href="product-detail.html" class="nav-item nav-link "> <i class="fa fa-archive" aria-hidden="true"></i> Detalles del Productos</a>
+                            <a href="" class="nav-item nav-link "> <i class="fa fa-archive" aria-hidden="true"></i> Detalles del Productos</a>
                             <!--<a href="product-detail.html" class="nav-item nav-link">Detalles del producto</a>-->
                             <a href="" class="nav-item nav-link "> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Compras</a>
                             <a href="" class="nav-item nav-link"><i class="fa fa-truck" aria-hidden="true"></i>  Envios</a>
@@ -390,7 +390,7 @@ if ($busqueda === null) {
                                 </div>
                             </div>
                             <div class="product-price">
-                                <h3><span><?php echo $f['producto'] ?></span></h3>
+                                <h3><span><?php echo $f['producto'] ?> </span></h3>
                                 <h3><span><?php echo "$". number_format($f['precio'], 2) ?></span></h3>
                                 <a class="btn" href=""><i class="fa fa-shopping-cart"></i>Comprar</a>
                             </div>
@@ -718,7 +718,11 @@ if ($busqueda === null) {
                 </div>
             </div>
         </div>
-        <!-- Footer End -->       
+        <!-- Footer End -->    
+
+        <!-- Back to Top -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+
         
          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
     <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
