@@ -45,8 +45,8 @@
 
                     <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                         <div class="navbar-nav mr-auto ">
-							<a href= "index.html" class=" nav-item nav-link"></span><i class="fa fa-home" aria-hidden="true"></i>  Inicio</a> 
-                            <a href="product-list.html" class="nav-item nav-link "> <i class="fa fa-archive" aria-hidden="true"></i> Productos</a>
+							<a href= "index.php" class=" nav-item nav-link"></span><i class="fa fa-home" aria-hidden="true"></i>  Inicio</a> 
+                            <a href="product-list.php" class="nav-item nav-link "> <i class="fa fa-archive" aria-hidden="true"></i> Productos</a>
                             <a href="" class="nav-item nav-link "> <i class="fa fa-archive" aria-hidden="true"></i> Detalles del Productos</a>
                             <!--<a href="product-detail.html" class="nav-item nav-link">Detalles del producto</a>-->
                             <a href="" class="nav-item nav-link "> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Compras</a>

@@ -10,24 +10,37 @@
                 <div class="row align-items-center">
                     <div class="col-md-3">
                         <div class="logo">
-                            <a href="index.html">
+                            <a href="index.php">
                                 <img src="img/logo de pagina.jpg" alt= "Logo">
                             </a>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="search">
-                            <input type="text" placeholder="Buscar">
-                            
-                           <button><i class=><script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-                            <lord-icon
-                           src="https://cdn.lordicon.com/pvbutfdk.json"
-                           trigger="hover"
-                               style="width:30px;height:30px">
+                   
+
+
+<div class="col-md-6">
+
+<form class="form-inline" action="buscar.php" method="GET">
+
+<div class="search">
+    <label for="inputPassword2" class="sr-only">Buscar</label>
+    <input name="busqueda" type="text" class="form-control" id="inputPassword2" placeholder="Buscar">
+
+
+
+                           <button><i class=""><script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
+                            <lord-icon src="https://cdn.lordicon.com/pvbutfdk.json" trigger="hover" style="width:30px;height:30px">
                              </lord-icon></i></button> <!--lupa con movimiento-->
+
+
+ 
 
                             
                         </div>
+                        
+    </form>
+                    </div>
+
                     </div>
                     
                     

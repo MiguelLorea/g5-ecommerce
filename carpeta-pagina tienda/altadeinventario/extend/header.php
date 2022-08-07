@@ -16,7 +16,7 @@
 <body class="bg-light">
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-info">
-		<a href="../admin/index.php" class="navbar-brand">Ecommerce</a>
+		<a href="../../index.php" class="navbar-brand">Ecommerce</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
 			<span class="navbar-toggler-icon" ></span>
 		</button>
