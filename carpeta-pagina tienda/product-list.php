@@ -2,6 +2,15 @@
 
 ?>
 
+
+
+
+<!-- Start of txt.me widget code -->
+<script src="https://v3.txt.me/livechat/js/wrapper/3fdac2fb-10d4-482a-a8ec-a509157da920" async></script>
+<noscript><a href="https://txt.me/reviews/3fdac2fb-10d4-482a-a8ec-a509157da920" rel="nofollow">Rate miki customer support</a>, powered by <a href="https://txt.me" rel="noopener nofollow" target="_blank">txt.me</a></noscript>
+<!-- End of txt.me widget code -->
+
+
         <!-- Bottom Bar Start -->
 
 
