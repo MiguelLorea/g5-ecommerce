@@ -63,7 +63,7 @@
                                 </div>
                             </div>-->
                         </div>
-                        <div class="navbar-nav ml-auto">
+                       <!-- <div class="navbar-nav ml-auto">
                             <div class="nav-item dropdown">
                                 <a href="altadeinventario/admin/inventario.php" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i>  Mi cuenta</a>
                                 <div class="dropdown-menu">
@@ -72,7 +72,7 @@
                                     <a href="#" class="dropdown-item">Crear Cuenta</a>
                                 </div>
                             </div>
-                        </div>
+                        </div>-->
                     </div>
                 </nav>
             </div>

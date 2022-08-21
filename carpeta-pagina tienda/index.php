@@ -64,6 +64,8 @@ if ($busqueda === null) {
 
         <!-- Template Stylesheet -->
         <link href="css/style.css" rel="stylesheet">
+      
+       
     </head>
 
     <body id="body">
@@ -87,24 +89,24 @@ if ($busqueda === null) {
                             <!--<a href="product-detail.html" class="nav-item nav-link">Detalles del producto</a>-->
                             <a href="" class="nav-item nav-link "> <i class="fa fa-shopping-cart" aria-hidden="true"></i> Compras</a>
                             <a href="" class="nav-item nav-link"><i class="fa fa-truck" aria-hidden="true"></i>  Envios</a>
-                            <!--<a href="my-account.html" class="nav-item nav-link"><a href="index.html">
-                                <img src="img/logo de pagina.jpg" alt= "Logo">
-                            </a></a>-->
-                            <!-- <div class="nav-item dropdown">
-                                <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Mas</a>
-                                <div class="dropdown-menu">
-                                    <a href="wishlist.html" class="dropdown-item">Lista de deseos</a>
-                                    <a href="login.html" class="dropdown-item">iniciar sesión & registrarse</a>
-                                </div>
-                            </div>-->
+                         
+                    
                         </div>
+
                         <div class="navbar-nav ml-auto">
                             <div class="nav-item dropdown">
+                               <a href="configurar pagina.html" class="nav-link " ><i class="fa fa-paint-brush" ></i> Configurar Página</a>
+                            </div>
+                        </div>
+
+                        <div class="navbar-nav ml-auto">
+                            <div class="nav-item dropdown">
+                            
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i>  Mi cuenta</a>
                                 <div class="dropdown-menu">
                                     <p style="color:rgb(211, 17, 36);"><H6>¡BIENVENIDO!</H6><hr></p>
-                                    <a href="#" class="dropdown-item">Ingresá</a>
-                                    <a href="#" class="dropdown-item">Crear Cuenta</a>
+                                    <a href="socialauthphp/indexingreso.php" class="dropdown-item">Ingresá</a>
+                                   
                                 </div>
                             </div>
                         </div>
@@ -114,7 +116,7 @@ if ($busqueda === null) {
         </div>
         <!-- Barra de Navegacion Termina -->  
         
-        <!-- Bottom Bar Start -->
+        <!-- Bottom Bar Start  / boton buscar / logo-->
         <div class="bottom-bar">
             <div class="container-fluid">
                 <div class="row align-items-center">
@@ -126,50 +128,25 @@ if ($busqueda === null) {
                         </div>
                     </div>
 
+                  <div class="col-md-6">
 
+                   <form class="form-inline" action="buscar.php" method="GET">
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<div class="col-md-6">
-
-<form class="form-inline" action="buscar.php" method="GET">
-
-<div class="search">
-    <label for="inputPassword2" class="sr-only">Buscar</label>
-    <input name="busqueda" type="text" class="form-control" id="inputPassword2" placeholder="Buscar">
-
-
+                   <div class="search">
+                   <label for="inputPassword2" class="sr-only">Buscar</label>
+                         <input name="busqueda" type="text" class="form-control" id="inputPassword2" placeholder="Buscar">
 
                            <button><i class=""><script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
                             <lord-icon src="https://cdn.lordicon.com/pvbutfdk.json" trigger="hover" style="width:30px;height:30px">
                              </lord-icon></i></button> <!--lupa con movimiento-->
-
-
  
-
-                            
                         </div>
                         
-    </form>
-                    </div>
+                        
+                      </div>
 
     
-                    
+                     <!-- cambio de colores de fondo -->
                      <div class="colores">
                        <select name="fondo" id="fondo" onchange="cambiarfondo(this)" class="color">
                         <option selected disabled>colores de fondo</option>
@@ -189,16 +166,14 @@ if ($busqueda === null) {
                      <!--boton para cambiar el fondo-->
                      <!--<button type="button" id="btn-color" onclick="btnChanger()">Cambiar fondo</button>-->
 
-
-
-                   
-
                 </div>
             </div>
         </div>
-        <!-- Barra de navegacion termina -->       
+      
+        <!-- Bottom Bar finaliza--->
+               
         
-        <!-- Normal Slider Start -->
+        <!-- Normal Slider start/ video  -->
         <div class="header">
         
            <div class="absolute">
@@ -211,7 +186,8 @@ if ($busqueda === null) {
         </div>
         <!-- Normal slider End -->      
         
-        <!-- Brand Start -->
+
+        <!-- Brand Start / marcas  -->
         <div class="brand">
             <div class="container-fluid">
                 <div class="brand-slider">
@@ -228,137 +204,11 @@ if ($busqueda === null) {
         </div>
         <!-- Brand End -->      
         
-       <!-- Feature / Descripcion Start -->
-       <!-- <div class="feature">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-lg-3 col-md-6 feature-col">
-                        <div class="feature-content">
-                            <i class="fab fa-cc-mastercard"></i>
-                            <h2>Pago Seguro</h2>
-                            <p>
-                                bla bla bla
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 feature-col">
-                        <div class="feature-content">
-                            <i class="fa fa-truck"></i>
-                            <h2>Envíos a todo el país</h2>
-                            <p>
-                                Comprá Online 24/7
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 feature-col">
-                        <div class="feature-content">
-                            <i class="fa fa-sync-alt"></i>
-                            <h2>30 Dias De Devolución</h2>
-                            <p>
-                                bla bla bla
-                            </p>
-                        </div>
-                    </div>
-                    <div class="col-lg-3 col-md-6 feature-col">
-                        <div class="feature-content">
-                            <i class="fa fa-comments"></i>
-                            <h2>Soporte</h2>
-                            <p>
-                                bla bla bla
-                            </p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!-- Feature / Descripcion End-->      
-        
-        <!-- Category Start-->
-       <!-- <div class="category">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-3">
-                        <div class="category-item ch-400">
-                            <img src="img/category-3.jpg" />
-                            <a class="category-name" href="">
-                                <p>Texto que describa la img</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="category-item ch-250">
-                            <img src="img/category-4.jpg" />
-                            <a class="category-name" href="">
-                                <p>Texto que describa la img</p>
-                            </a>
-                        </div>
-                        <div class="category-item ch-150">
-                            <img src="img/category-5.jpg" />
-                            <a class="category-name" href="">
-                                <p>Texto que describa la img</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="category-item ch-150">
-                            <img src="img/category-6.jpg" />
-                            <a class="category-name" href="">
-                                <p>Texto que describa la img</p>
-                            </a>
-                        </div>
-                        <div class="category-item ch-250">
-                            <img src="img/category-7.jpg" />
-                            <a class="category-name" href="">
-                                <p>Texto que describa la img</p>
-                            </a>
-                        </div>
-                    </div>
-                    <div class="col-md-3">
-                        <div class="category-item ch-400">
-                            <img src="img/category-8.jpg" />
-                            <a class="category-name" href="">
-                                <p>Texto que describa la img</p>
-                            </a>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!-- Category End-->       
-        
-        <!-- Call to Action Start -->
-       <!-- <div class="call-to-action">
-            <div class="container-fluid">
-                <div class="row align-items-center">
-                    <div class="col-md-6">
-                        <h1>Comunicate ante cualquier consulta</h1>
-                    </div>
-                    <div class="col-md-6">
-                        <a href="tel:xxxxx">Contacto</a>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!-- Call to Action End -->       
-        
-        <!-- Featured Product Start -->
-
-
-
-
-
-
-
-
-
-
-
-
-
+        <!-- Featured Product Start / productos destacados-->
 
 
                 <div class="featured-product product">
-            <div class="container-fluid">
+                <div class="container-fluid">
                 <div class="section-header">
                   <h3>PRODUCTOS</h3>   
                 </div>
@@ -411,25 +261,7 @@ if ($busqueda === null) {
         </div>
         <!-- Featured Product End -->       
         
-        <!-- Newsletter Start -->
-       <!-- <div class="newsletter">
-            <div class="container-fluid">
-                <div class="row">
-                    <div class="col-md-6">
-                        <h1>Suscribete a nuestro Boletin.</h1>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="form">
-                            <input type="email" value="Tu email">
-                            <button>Suscribirse</button>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>-->
-        <!-- Newsletter End -->        
-        
-        <!-- Prod rec Start -->
+        <!-- Prod rec Start / productos mas vendidos  -->
         <div class="recent-product product">
             <div class="container-fluid">
                 <div class="section-header">
@@ -440,9 +272,6 @@ if ($busqueda === null) {
                         <div class="product-item">
                             <div class="product-title">
                                 
-                                <div class="ratting">
-                                    
-                                </div>
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
@@ -486,9 +315,7 @@ if ($busqueda === null) {
                         <div class="product-item">
                             <div class="product-title">
                                <!-- <a href="#">Nombre prod</a>-->
-                                <div class="ratting">
-                                   
-                                </div>
+                                
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
@@ -510,9 +337,7 @@ if ($busqueda === null) {
                         <div class="product-item">
                             <div class="product-title">
                                 
-                                <div class="ratting">
-                                   
-                                </div>
+                                
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
@@ -534,9 +359,6 @@ if ($busqueda === null) {
                         <div class="product-item">
                             <div class="product-title">
                                 
-                                <div class="ratting">
-                                   
-                                </div>
                             </div>
                             <div class="product-image">
                                 <a href="product-detail.html">
@@ -559,7 +381,7 @@ if ($busqueda === null) {
         </div>
         <!--Prod rec End -->
         
-        <!-- Footer Start -->
+        <!-- Footer Start / pie de pagina -->
         <div class="footer">
             <div class="container-fluid">
                 <div class="row">
@@ -590,13 +412,6 @@ if ($busqueda === null) {
                                      
                                     <a href="https://api.whatsapp.com/send?phone=3512047231&text=Hola,%20sean%20bienvenidos! "><i class=><img src="img/icons8-whatsapp-32.png" alt=""></i></a><!--"fab fa-youtube"-->
                                      
-
-
-                                    <!--<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.5.0/css/font-awesome.min.css">
-                                    <a href="https://api.whatsapp.com/send?phone=3512047231&text=Hola,%20sean%20bienvenidos!"
-                                     class="float" target="_blank">
-                                    <i class="fa fa-whatsapp" aria-hidden="true"></i>
-                                    </a>-->
                                 </div>
                             </div>
                         </div>
@@ -634,24 +449,11 @@ if ($busqueda === null) {
                         </div>
                     </div>
                 
-                    
-                   <!--<div class="col-md-6">
-                        <div class="payment-security">
-                            <h6>Pago seguro:</h6>
-                            <img src="img/godaddy.svg" alt="Payment Security" />
-                            <img src="img/norton.svg" alt="Payment Security" />
-                            <img src="img/ssl.svg" alt="Payment Security" />
-                        </div>
-                    </div>-->
+                
                 </div>
 
                 
               
-                
-
-
-             
-
             </div>
         </div>
 
@@ -666,83 +468,43 @@ if ($busqueda === null) {
           <noscript><a href="https://txt.me/reviews/3fdac2fb-10d4-482a-a8ec-a509157da920" rel="nofollow">Rate miki customer support</a>, powered by <a href="https://txt.me" rel="noopener nofollow" target="_blank">txt.me</a></noscript>
           <!-- End of txt.me widget code -->
     
-           <!-- <script src="https://cdn.lordicon.com/xdjxvujz.js"></script>
-            <lord-icon
-           src="https://cdn.lordicon.com/mjmrmyzg.json"
-           trigger="hover"
-            style="width:250px;height:80px">
-           </lord-icon>-->
-
-          <!-- <span class="tooltip-box">¿como podemos ayudarte?</span>-->
+           
 
         </div>
         
-    
         <!-- Footer End -->
         
-       <!-- Barra superior comienza -->
-       <div class="top-bar">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6">
-                    
-                   <!-- <div class="banner" >
-
-                    
-                        <p><b>ENVIOS GRATIS A TODO EL PAIS</b> </p>
-                        
-                        <p><b>3 Y 6 CUOTAS SIN INTERES</b></p> 
-                    
-                        <p><b>HASTA 40% OFF!</b></p> 
-
-                    </div>-->
-                    
-                </div>
-                
-            </div>
-        </div>
-    </div> 
-    <!-- Barra superior acaba --> 
-
-
+      
         <!-- Footer Start -->
-        <div class="footer-bottom">
+         <div class="footer-bottom">
             <div class="container">
                 <div class="row">
                     <div class="col-md-6 copyright">
                         
                         <p>Copyright &copy; <a href="#">Boutique@gmail.com</a>. Todos los derechos reservados</p>
                     </div>
-
-                    <!--<div class="col-md-6 template-by">		
-                        <p>Designed By Los Pibes</p>
-                    </div>-->
-
-                   <!--charla-->
-                  
-
                 </div>
             </div>
-        </div>
-        <!-- Footer End -->    
+          </div>
+         <!-- Footer End -->    
 
-        <!-- Back to Top -->
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+         <!-- Back to Top -->
+          <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
         
          <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
-    <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
-    <script src="assets/js/vendor/popper.min.js"></script>
-    <script src="dist/js/bootstrap.min.js"></script>
+         <script>window.jQuery || document.write('<script src="assets/js/vendor/jquery-slim.min.js"><\/script>')</script>
+         <script src="assets/js/vendor/popper.min.js"></script>
+         <script src="dist/js/bootstrap.min.js"></script>
 
-        <!-- JavaScript Libraries -->
-        <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
-        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="lib/easing/easing.min.js"></script>
-        <script src="lib/slick/slick.min.js"></script>
+         <!-- JavaScript Libraries -->
+         <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
+         <script src="lib/easing/easing.min.js"></script>
+         <script src="lib/slick/slick.min.js"></script>
         
-        <!-- Template Javascript -->
-        <script src="js/main.js"></script>
+         <!-- Template Javascript -->
+         <script src="js/main.js"></script>
      
       </select>
     </body>

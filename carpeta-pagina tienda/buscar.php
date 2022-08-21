@@ -128,35 +128,6 @@ if ($busqueda === null) {
                     </div>
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 <div class="col-md-6">
 
 <form class="form-inline" action="" method="GET">
@@ -354,21 +325,10 @@ if ($busqueda === null) {
                     </div>
                 
                     
-                   <!--<div class="col-md-6">
-                        <div class="payment-security">
-                            <h6>Pago seguro:</h6>
-                            <img src="img/godaddy.svg" alt="Payment Security" />
-                            <img src="img/norton.svg" alt="Payment Security" />
-                            <img src="img/ssl.svg" alt="Payment Security" />
-                        </div>
-                    </div>-->
+                   
                 </div>
 
                 
-              
-                
-
-
              
 
             </div>
@@ -377,33 +337,6 @@ if ($busqueda === null) {
        
         
     
-        <!-- Footer End -->
-        
-       <!-- Barra superior comienza -->
-       <div class="top-bar">
-        <div class="container-fluid">
-            <div class="row">
-                <div class="col-sm-6">
-                    
-                   <!-- <div class="banner" >
-
-                    
-                        <p><b>ENVIOS GRATIS A TODO EL PAIS</b> </p>
-                        
-                        <p><b>3 Y 6 CUOTAS SIN INTERES</b></p> 
-                    
-                        <p><b>HASTA 40% OFF!</b></p> 
-
-                    </div>-->
-                    
-                </div>
-                
-            </div>
-        </div>
-    </div> 
-    <!-- Barra superior acaba --> 
-
-
         <!-- Footer Start -->
         <div class="footer-bottom">
             <div class="container">
@@ -413,12 +346,7 @@ if ($busqueda === null) {
                         <p>Copyright &copy; <a href="#">Boutique@gmail.com</a>. Todos los derechos reservados</p>
                     </div>
 
-                    <!--<div class="col-md-6 template-by">		
-                        <p>Designed By Los Pibes</p>
-                    </div>-->
-
-                   <!--charla-->
-                  
+                    
 
                 </div>
             </div>
