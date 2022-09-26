@@ -1,6 +1,6 @@
 <?php include '../extend/header.php'; 
 $clave = htmlentities($_GET['clave']);
-$sel = $con->prepare("SELECT producto,foto FROM productos WHERE clave = ?");
+$sel = $con->prepare("SELECT producto,foto FROM inventario WHERE clave = ?");
 $sel->execute(array($clave));
   	if ($f = $sel->fetch()) { 
   	}
@@ -33,10 +33,7 @@ $sel = null;
  		<div class="col-4">
  			<div class="card" style="width: 20rem; margin-top: 1%;">
 
-				<a href="#" onclick="bootbox.confirm('Deseas realizar esta accion', function(result)
-				{if (result == true)
-				{ location.href='eliminar_imagen.php?clave_producto=<?php echo $clave ?>&clave_img=<?php echo $f_img['clave'] ?>&ruta=<?php echo $f_img['ruta'] ?>'; }})" >
-				<img src="<?php echo $f_img['ruta'] ?>" class="card-img-top"></a>
+				<a href="#" onclick="bootbox.confirm('Deseas realizar esta accion', function(result){if (result == true){ location.href='eliminar_imagen.php?clave_producto=<?php echo $clave ?>&clave_img=<?php echo $f_img['clave'] ?>&ruta=<?php echo $f_img['ruta'] ?>'; }})" ><img src="<?php echo $f_img['ruta'] ?>" class="card-img-top"></a>
 
  				
  			</div>

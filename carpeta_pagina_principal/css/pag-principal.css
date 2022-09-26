@@ -154,8 +154,12 @@ header label {
 
 
 }
+
 .menu ul li ul li a{ /*tamano del letra del submenu*/
-    font-size: 12px;
+    font-size: 15px;
+    
+    
+
 
 }
 

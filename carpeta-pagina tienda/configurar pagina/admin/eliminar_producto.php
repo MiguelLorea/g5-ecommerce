@@ -11,7 +11,7 @@ if ($pagina == "categorias.php") {
 }
 
 
-$del = $con->prepare("DELETE FROM productos WHERE clave = :clave ");
+$del = $con->prepare("DELETE FROM inventario WHERE clave = :clave ");
      $del->bindparam(':clave', $clave);
       
  	if ($del->execute()){
@@ -33,10 +33,10 @@ $del = $con->prepare("DELETE FROM productos WHERE clave = :clave ");
 			$del2->execute();
  		 	$del2 = null;
 
- 		 echo alerta('El producto ha sido eliminado',$pagina);
+ 		 echo alerta('la tienda ha sido eliminada',$pagina);
 
  	}else{
- 		echo alerta('El producto no ha podido ser eliminado',$pagina);
+ 		echo alerta('la tienda no ha podido ser eliminada',$pagina);
  	}
 
 

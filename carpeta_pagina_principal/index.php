@@ -78,19 +78,24 @@
 
 
                 <li class="submenu"><a href="#">Inicio<span class="icon-down-open"></span></a>
-
+                  
                     <ul>
 
+                    <li> <a href="socialauthphp/indexingreso.php " #="">registrarse con redes sociales</a> </li>
+                    <li>
 <?php
 if(isset($_SESSION['nombredelusuario']))
 {
     $usuarioingresado = $_SESSION['nombredelusuario'];
-    echo "<tr><td colspan='2' align='center'><a>Bienvenido: $usuarioingresado </a></td></tr>";
+    
+    echo "<tr><td colspan='2' align='center'><a href='../carpeta-pagina tienda/index.php'>Bienvenido: $usuarioingresado </a></td></tr>";
+
 }
 else
 {
 
 echo "<a href='../formulario_registro/admin/altadetienda.php'>registrar tu local</a>";
+
                        
                    
 
@@ -114,12 +119,14 @@ if(isset($_SESSION['nombredelusuario']))
 
 
 ?></form>
-  </ul>
 
+  </ul>
+ 
+  
 
                 </li>
 
-         <li><a href="" #="">Quíenes somos</a></li>
+              <li><a href=#quienessomos>Quíenes somos</a></li>
                 <li><a href="" #="">Categorías</a></li>
                 <li><a href="" #="">Nuestros Servicios</a></li>
                 <li><a href="" #="">Contacto</a></li>
@@ -162,7 +169,7 @@ if(isset($_SESSION['nombredelusuario']))
     <main>
         <!-- especifica el contenido principal de un documento.-->
 
-        <section class="contenedor sobre-nosotros">
+        <section class="contenedor sobre-nosotros" id="quienessomos">
             <h2 class="titulo"><u>QUÍENES SOMOS</u></h2>
             <br>
             <br>

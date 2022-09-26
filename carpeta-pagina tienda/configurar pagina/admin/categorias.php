@@ -22,10 +22,10 @@ $opc = htmlentities($_GET['opc']);
 						<tbody>
 							<?php 
 							if ($opc == 'GENERAL') {
-							$sel = $con->prepare("SELECT * FROM productos ORDER BY id ");
+							$sel = $con->prepare("SELECT * FROM inventario ORDER BY id ");
 							$sel->execute();
 							}else{
-							$sel = $con->prepare("SELECT * FROM productos WHERE categoria = ? ORDER BY id ");
+							$sel = $con->prepare("SELECT * FROM inventario WHERE categoria = ? ORDER BY id ");
 							$sel->execute(array($opc));
 							}
 							

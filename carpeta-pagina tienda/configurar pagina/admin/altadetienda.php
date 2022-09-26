@@ -32,7 +32,7 @@
 
 <div class="container" style="margin-top: 1%;">
 	<div class="card text-white bg-secondary">
-			<div class="card-header"><h4 class="card-title">Alta de tienda</h4></div>
+			<div class="card-header"><h4 class="card-title">configurar página</h4></div>
 			<div class="card-body">
 
 
@@ -67,36 +67,34 @@ if(isset($_POST['btncerrar']))
 ?>
 </table>
 
+
 				<form action="ins_inventario.php" method="post" autocomplete="off" enctype="multipart/form-data">
+				<div ><h5>Logo</h5></div>
+				
 					<div class="form-group">
-						<input type="text" name="nombredeusuario" required placeholder="Nombre de usuario" class="form-control">
+						<input type="file" name="logo"  class="form-control">
 					</div>
-					<div class="form-group">
-						<input type="number" name="cuil" required placeholder="Cuil" class="form-control">
-					</div>
-					<div class="form-group">
-						<input type="number" required name="telefono" placeholder="Telefono" class="form-control">
-					</div>
-					<div class="form-group">
-						<select name="categoria" required class="form-control">
-							<option value="" disabled="" selected="">Elige una categoria</option>
-							<option value="MODA">MODA</option>
-							<option value="ELECTRONICA">ELECTRONICA</option>
-							<option value="JOYERIA">JOYERIA</option>
-							<option value="RELOJES">RELOJES</option>
-							<option value="HOGAR">HOGAR</option>
-							<option value="ZAPATOS">ZAPATOS</option>
+					
+                    <div class="form-group">
+						<select name="fondo" required class="form-control">
+							<option value="" disabled="" selected="">Elige un color de fondo</option>
+							<option value="coral">coral</option>
+                           <option value="teal">verde azulado</option>
+                           <option value="gray">gris</option>
+                           <option value="lightpink">rosa claro</option>
+                          <option value="burlywood">marron claro</option>
+                           <option value="bisque">cremita</option>
+                          <option value="silver"> gris claro</option>
+                          <option value="white"> blanco</option>
 						</select>
+
 					</div>
+                  
+					<div ><h5>Video/imagen</h5></div>
 					<div class="form-group">
-						<input type="file" name="imagen"  class="form-control">
+						<input type="file" name="videoimagen" class="form-control">
 					</div>
-					<div class="form-group">
-						<input name="direccion" placeholder="Direccion" class="form-control" ></input>
-					</div>
-					<div class="form-group">
-						<input name="nombretienda" placeholder="Nombre de tienda" class="form-control" ></input>
-					</div>
+				
 					<button type="submit" class="btn btn-info">Guardar</button>
 
 				</form>

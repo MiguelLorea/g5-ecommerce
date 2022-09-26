@@ -95,7 +95,7 @@ if ($busqueda === null) {
 
                         <div class="navbar-nav ml-auto">
                             <div class="nav-item dropdown">
-                               <a href="configurar pagina.html" class="nav-link " ><i class="fa fa-paint-brush" ></i> Configurar Página</a>
+                               <a href="configurar pagina/admin/altadetienda.php" class="nav-link " ><i class="fa fa-paint-brush" ></i> Configurar Página</a>
                             </div>
                         </div>
 
@@ -105,7 +105,7 @@ if ($busqueda === null) {
                                 <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown"><i class="fa fa-user" aria-hidden="true"></i>  Mi cuenta</a>
                                 <div class="dropdown-menu">
                                     <p style="color:rgb(211, 17, 36);"><H6>¡BIENVENIDO!</H6><hr></p>
-                                    <a href="socialauthphp/indexingreso.php" class="dropdown-item">Ingresá</a>
+                                   <!-- <a href="socialauthphp/indexingreso.php" class="dropdown-item">Ingresá</a>-->
                                    
                                 </div>
                             </div>
