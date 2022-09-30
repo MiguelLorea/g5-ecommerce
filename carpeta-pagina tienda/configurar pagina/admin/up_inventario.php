@@ -11,6 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$categoria = htmlentities($_POST['categoria']);
 	$direccion = htmlentities($_POST['direccion']);
 	$nombretienda = htmlentities($_POST['nombretienda']);
+$fondo = htmlentities($_POST['fondo']);
+
+
 
 
 	// redimensionar y validar imagen
@@ -48,7 +51,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$copia = htmlentities($_POST['anterior']);
 	}
 
-	$up = $con->prepare("UPDATE inventario SET nombredeusuario = :nombredeusuario, cuil = :cuil, telefono = :telefono, categoria = :categoria, foto = :foto, direccion = :direccion , nombretienda = :nombretienda WHERE clave = :clave ");
+	$up = $con->prepare("UPDATE inventario SET nombredeusuario = :nombredeusuario, cuil = :cuil, telefono = :telefono, categoria = :categoria, foto = :foto, direccion = :direccion , nombretienda = :nombretienda, fondo = :fondo      WHERE clave = :clave ");
 	    $up->bindparam(':clave', $clave);
 	    $up->bindparam(':nombredeusuario', $nombredeusuario);
 	    $up->bindparam(':cuil', $cuil);
@@ -57,6 +60,8 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	    $up->bindparam(':direccion', $direccion);
 	    $up->bindparam(':nombretienda', $nombretienda);
 	    $up->bindparam(':foto', $copia);
+$up->bindparam(':fondo', $fondo);
+	    
 	     
 		if ($up->execute()){
 		echo alerta('La tienda ha sido actualizado','editar_producto.php?clave='.$clave.'');

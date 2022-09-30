@@ -33,10 +33,10 @@ $del = $con->prepare("DELETE FROM inventario WHERE clave = :clave ");
 			$del2->execute();
  		 	$del2 = null;
 
- 		 echo alerta('la tienda ha sido eliminada',$pagina);
+ 		 echo alerta('El producto ha sido eliminado',$pagina);
 
  	}else{
- 		echo alerta('la tienda no ha podido ser eliminada',$pagina);
+ 		echo alerta('El producto no ha podido ser eliminado',$pagina);
  	}
 
 

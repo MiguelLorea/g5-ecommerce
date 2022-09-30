@@ -9,26 +9,22 @@ $sel->execute(array($clave));
 
 <div class="container" style="margin-top: 1%;">
 	<div class="card text-white bg-secondary">
-			<div class="card-header"><h4 class="card-title">Editar tienda</h4></div>
+			<div class="card-header"><h4 class="card-title">Editar producto</h4></div>
 			<div class="card-body">
 				<form action="up_inventario.php" method="post" autocomplete="off" enctype="multipart/form-data">
 					<input type="hidden" name="clave" value="<?php echo $clave ?>">
-					
-
-
-
-<div class="form-group">
-						<input type="text" name="nombredeusuario" required placeholder="Nombre de usuario" class="form-control" value="<?php echo $f['nombredeusuario'] ?>">
+					<div class="form-group">
+						<input type="text" name="nombredeusuario" required placeholder="nombre de usuario" class="form-control" value="<?php echo $f['nombredeusuario'] ?>">
 					</div>
 					<div class="form-group">
-						<input type="number" name="cuil" required placeholder="Cuil" class="form-control value=" value="<?php echo $f['cuil'] ?>">
+						<input type="text" name="cuil" required placeholder="cuil" class="form-control" value="<?php echo $f['cuil'] ?>">
 					</div>
 					<div class="form-group">
-						<input type="number" required name="telefono" placeholder="Telefono" class="form-control" value="<?php echo $f['telefono'] ?>">
+						<input type="number"  required name="telefono" placeholder="telefono" class="form-control" value="<?php echo $f['telefono'] ?>">
 					</div>
 					<div class="form-group">
-						<select name="categoria" required class="form-control" >">
-							<option value="" disabled="" selected="">Elige una categoria</option>
+						<select name="categoria" required class="form-control">
+							<option value="<?php echo $f['categoria'] ?>"><?php echo $f['categoria'] ?></option>
 							<option value="MODA">MODA</option>
 							<option value="ELECTRONICA">ELECTRONICA</option>
 							<option value="JOYERIA">JOYERIA</option>
@@ -57,29 +53,46 @@ $sel->execute(array($clave));
            
 
 
-					
+	<div class="form-group">
+						<img src="<?php echo $f['logo'] ?>" width="200">
+					</div>
+					<div class="form-group">
+						<input type="file" name="imagen2" class="form-control">
+					</div>
+
+
+
 
 					<div class="form-group">
 						<img src="<?php echo $f['foto'] ?>" width="200">
 					</div>
 					<div class="form-group">
-						<input type="file" name="imagen"  class="form-control">
+						<input type="file" name="imagen" class="form-control">
+					</div>
+
+
+
+
+					<input type="hidden" name="anterior" value="<?php echo $f['foto'] ?>">
+					<div class="form-group">
+						<input type="text" name="direccion" required placeholder="direccion" class="form-control" value="<?php echo $f['direccion'] ?>">
 					</div>
 					<div class="form-group">
-						<input name="direccion" placeholder="Direccion" class="form-control" value="<?php echo $f['direccion'] ?>"> </input>
+						<input type="text" name="nombretienda" required placeholder="nombre tienda" class="form-control" value="<?php echo $f['nombretienda'] ?>">
 					</div>
-					<div class="form-group">
-						<input name="nombretienda" placeholder="Nombre de tienda" class="form-control"  value="<?php echo $f['nombretienda'] ?>"></input>
+						<div class="form-group">
+						<select name="aprobado" required class="form-control">
+								<option value="<?php echo $f['aprobado'] ?>"><?php echo $f['aprobado'] ?>
+							<option value="aprobado">aprobado</option>
+							<option value="pendiente">pendiente</option>
+							
+						</select>
 					</div>
-
-
-
+					
 					<button type="submit" class="btn btn-info">Editar</button>
 
 				</form>
 			</div>
-		</div>
-
 		</div>
 </div>
 

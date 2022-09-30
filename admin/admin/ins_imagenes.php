@@ -16,14 +16,15 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$alto = 400;
 		$info = pathinfo($imagen);
 		$tamano = getimagesize($ruta);
-	
+		$width = $tamano[0];
+		$height = $tamano[1];
 		$clave = sha1(rand(0000,9999).rand(00,99));
 
 
 		if ($info['extension'] == 'jpg' || $info['extension'] == 'JPG' || $info['extension'] == 'jpeg' || $info['extension'] == 'JPEG') {
 			$imagenvieja = imagecreatefromjpeg($ruta);
 			$nueva = imagecreatetruecolor($ancho, $alto);
-			imagecopyresampled($ancho, $alto);
+			imagecopyresampled($nueva, $imagenvieja, 0, 0, 0, 0, $ancho, $alto, $width, $height);
 			$cont++;
 			$rand = rand(000,999);
 			$renombrar = $clave.$rand.$cont;
@@ -32,7 +33,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		}elseif ($info['extension'] == 'png' || $info['extension'] == 'PNG') {
 			$imagenvieja = imagecreatefrompng($ruta);
 			$nueva = imagecreatetruecolor($ancho, $alto);
-			imagecopyresampled($ancho, $alto);
+			imagecopyresampled($nueva, $imagenvieja, 0, 0, 0, 0, $ancho, $alto, $width, $height);
 			$cont++;
 			$rand = rand(000,999);
 			$renombrar = $clave.$rand.$cont;
