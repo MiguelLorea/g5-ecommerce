@@ -16,7 +16,7 @@
 <body class="bg-light">
 
 	<nav class="navbar navbar-expand-lg navbar-light bg-info">
-		<a href="../admin/index.php" class="navbar-brand">Ecommerce</a>
+		<a href="" class="navbar-brand">Ecommerce</a>
 		<button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#menu">
 			<span class="navbar-toggler-icon" ></span>
 		</button>
@@ -38,8 +38,19 @@
 						<a href="../admin/categorias.php?opc=ZAPATOS" class="dropdown-item">ZAPATOS</a>
 					</div>
 				</li>
+
+				
 			</ul>
-			<button class="btn btn-dark" id="logout" >Salir</button>
+
+			
+			<a class="nav-link"><h5>presiona continuar, si ya realizaste el inventario</h5></a>
+				
+			<button class="btn btn-dark"  >
+
+			<a href="../../carpeta-pagina tienda/index.php" class="nav-link"> continuar </a>
+			
+			</button>
+			
 		</div>
 	</nav>
 	

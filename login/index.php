@@ -34,7 +34,7 @@ session_start();
 if(isset($_SESSION['nombredelusuario']))
 {
 
-	header('location: ../formulario_registro/admin/altadetienda.php');
+	/*header('location: ../formulario_registro/admin/altadetienda.php');*/
 }
 
 if(isset($_POST['btningresar']))
@@ -42,9 +42,6 @@ if(isset($_POST['btningresar']))
 	
 $nombre = $_POST["txtusuario"];
 $pass = $_POST["txtpassword"];
-
-
-	
 
 	
 $query = mysqli_query($conn,"SELECT * FROM login WHERE usuario = '".$nombre."' and password = '".$pass."'");
@@ -56,13 +53,21 @@ if($nr == 1)
 	$_SESSION['nombredelusuario']=$nombre;
 
   /*header("Location: ../carpeta-pagina tienda/configurar pagina");*/
-	header("Location: ../formulario_registro/admin/altadetienda.php");
+  /*header("Location: ../formulario_registro/admin/altadetienda.php");*/
+	header("Location: ../admin/admin/inventario.php");
   
+
+
 }
+
+
 else if ($nr == 0) 
 {
 	echo "<script> alert('Usuario no existe');window.location= 'index.php' </script>";
 }
 
+
 } 
+
+
 ?>

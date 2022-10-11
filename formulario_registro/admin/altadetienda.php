@@ -65,6 +65,7 @@ if(isset($_POST['btncerrar']))
 }
 
 ?>
+
 </table>
 
 				<form action="ins_inventario.php" method="post" autocomplete="off" enctype="multipart/form-data">
@@ -102,6 +103,9 @@ if(isset($_POST['btncerrar']))
 				</form>
 			</div>
 		</div> 
+
+
+		
 <!--
 		<div class="card text-white bg-dark" style="margin-top: 1%;">
 				<div class="card-header"><h4 class="card-title">Ultimo registro</h4></div>

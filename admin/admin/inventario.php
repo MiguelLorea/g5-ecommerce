@@ -26,24 +26,23 @@
 							<option value="ZAPATOS">ZAPATOS</option>
 						</select>
 					</div>
+
 					<div class="form-group">
 						<input type="file" name="imagen"  class="form-control">
 					</div>
+
 					<div class="form-group">
 						<input name="direccion" placeholder="Direccion" class="form-control" ></input>
 					</div>
+
 					<div class="form-group">
 						<input name="nombretienda" placeholder="Nombre de tienda" class="form-control" ></input>
 					</div>
-					<div class="form-group">
-						<select name="aprobado" required class="form-control">
-							<option value="" disabled="" selected="">Elige una categoria</option>
-							<option value="aprobado">Si</option>
-							<option value="pendiente">No</option>
-							
-						</select>
-					</div>
+
+					
+
 					<button type="submit" class="btn btn-info">Guardar</button>
+					
 
 				</form>
 			</div>
@@ -51,30 +50,26 @@
 
 
 
-
-
+     <!--
 		<div class="card text-white bg-dark" style="margin-top: 1%;">
-				<div class="card-header"><h4 class="card-title">Ultimo registro</h4></div>
+				<div class="card-header"><h4 class="card-title">último registro</h4></div>
 				<div class="card-body">
 					
 					<table class="table">
 						<thead>
 							<th>Foto</th>
-							<th>Producto</th>
-							<th>Cantidad</th>
-							<th>Precio</th>
-							<th>Categoria</th>
-							<th>Desc.</th>
-						<th>Whatsapp</th>	
-							<th></th>
+							<th>nombre de usuario</th>
+							<th>Cuil</th>
+							<th>telefono</th>
+							<th>categoria</th>
+							<th>direccion</th>
+							<th>nombre tienda</th>
+						     <th>logo</th>	
+							<th>imagen de fondo</th>
 							<th></th>
 							<th></th>
 						</thead>
 						<tbody>
-
-
-
-
 
 							<?php 
 							$sel = $con->prepare("SELECT * FROM inventario ORDER BY id DESC limit 1 ");
@@ -82,17 +77,15 @@
 							  	while ($f = $sel->fetch()) {  ?>
 							  	<tr>
 							  		<td><img src="<?php echo $f['foto'] ?>" width="50" heigth="50" ></td>
-							  		<td>
-
-							  			<?php echo $f['categoria'] ?>
-							  				
-
-
-
-							  			</td>
-							  		<td><?php echo $f['cantidad'] ?></td>
-							  		<td><?php echo "$". number_format($f['precio'], 2) ?></td>
-							  		
+							  		<td><?php echo $f['nombredeusuario'] ?> </td>
+							  		<td><?php echo $f['cuil'] ?></td>
+									<td><?php echo $f['telefono'] ?></td>
+									<td><?php echo $f['categoria'] ?></td>
+									<td><?php echo $f['direccion'] ?></td>
+									<td><?php echo $f['nombretienda'] ?></td>
+									<td><img src="<?php echo $f['logo'] ?>" width="50" heigth="50" ></td>
+									<td><img src="<?php echo $f['imagenfondo'] ?>" width="50" heigth="50" ></td>
+							  		<td><a href="editar_producto.php?clave=<?php echo $f['clave'] ?>" class="btn btn-outline-primary btn-sm"><span class="material-icons">edit</span></a></td>
 							  	</tr>
 							  	<?php 
 							  	}
@@ -105,12 +98,7 @@
 				
 
 				</div>
-			</div>
-
--->
-
-
-
+			</div>-->
 </div>
 
 <?php include '../extend/footer.php'; ?>

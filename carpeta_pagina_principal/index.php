@@ -97,8 +97,7 @@ else
 echo "<a href='../formulario_registro/admin/altadetienda.php'>registrar tu local</a>";
 
                        
-                   
-
+                
                 
                     }
 ?>

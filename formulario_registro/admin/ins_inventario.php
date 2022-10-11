@@ -1,9 +1,10 @@
 <?php 
-include '../extend/headerphp.php';
-include '../extend/alertas.php';
+include '../extend/headerphp.php'; // plantillas
+include '../extend/alertas.php'; // plantillas
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 
+	// recibimos las variables desde el formulario hacia php con el metodo post
 	$clave = sha1(rand(0000,9999).rand(00,99));
 	$nombredeusuario = htmlentities($_POST['nombredeusuario']);
 	$cuil = htmlentities($_POST['cuil']);
@@ -11,6 +12,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$categoria = htmlentities($_POST['categoria']);
 	$direccion = htmlentities($_POST['direccion']);
 	$nombretienda = htmlentities($_POST['nombretienda']);
+	
 	
 	
 	
@@ -41,13 +43,16 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 			$copia = "foto_producto/".$clave.".png";
 			imagepng($nueva,$copia);
 		}else{
-			echo alerta('El formato no es aceptado','inventario.php');
+			echo alerta('El formato no es aceptado','altadetienda.php');
 			exit;
 		}
 
 	}else{
 		$copia = 'foto_producto/producto.png';
 	}
+
+ // guardar inventario en base de datos
+ // poner los datos en el mismo orden de la tabla
 
 	$ins = $con->prepare("INSERT INTO inventario VALUES (DEFAULT, :clave,:nombredeusuario, :cuil, :telefono, :categoria, :direccion, :nombretienda,  :foto)");
 	    $ins->bindparam(':clave', $clave);
@@ -58,24 +63,28 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	    $ins->bindparam(':direccion', $direccion);
 	    $ins->bindparam(':nombretienda', $nombretienda);
 	    $ins->bindparam(':foto', $copia);
+		
 	
 	     
+		// si se realiza mandamos una alerta de que el producto fue guardado y lo redireccionamos a la pagina de altainventario
 		if ($ins->execute()){
 
 
-		echo alerta('!¡Felicidades! completo con exito el registro, pronto nos contactaremos con usted para evaluar su solicitud.','altadetienda.php');
+		echo alerta('¡Felicidades! completo con exito el registro, pronto nos contactaremos con usted para evaluar su solicitud.','altadetienda.php');
 		
-		$ins = null;
+		$ins = null; 
 		$con = null;
 		}else{
-			echo alerta('El producto no pudo ser guardado','inventario.php');
+			echo alerta('El producto no pudo ser guardado','altadetienda.php');
 		}
 		
 
 
 
 }else{
-echo alerta('Utiliza el formulario','inventario.php');
+
+echo alerta('Utiliza el formulario','altadetienda.php');  
+
 }
 
  ?> 

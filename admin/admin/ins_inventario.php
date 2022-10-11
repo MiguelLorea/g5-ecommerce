@@ -11,10 +11,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	$categoria = htmlentities($_POST['categoria']);
 	$direccion = htmlentities($_POST['direccion']);
 	$nombretienda = htmlentities($_POST['nombretienda']);
-	$aprobado = htmlentities($_POST['aprobado']);
 	
 	
-	
+
 	// redimensionar y validar imagen
 
 	$ruta = $_FILES['imagen']['tmp_name'];
@@ -50,7 +49,9 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 		$copia = 'foto_producto/producto.png';
 	}
 
-	$ins = $con->prepare("INSERT INTO inventario VALUES (DEFAULT, :clave,:nombredeusuario, :cuil, :telefono, :categoria, :direccion, :nombretienda,  :foto,   :aprobado)");
+	// guardar datos en la base de datos
+
+	$ins = $con->prepare("INSERT INTO inventario VALUES (DEFAULT, :clave,:nombredeusuario, :cuil, :telefono, :categoria, :direccion, :nombretienda,  :foto)");
 	    $ins->bindparam(':clave', $clave);
 	    $ins->bindparam(':nombredeusuario', $nombredeusuario);
 	    $ins->bindparam(':cuil', $cuil);
@@ -59,32 +60,30 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST') {
 	    $ins->bindparam(':direccion', $direccion);
 	    $ins->bindparam(':nombretienda', $nombretienda);
 	    $ins->bindparam(':foto', $copia);
-	     $ins->bindparam(':aprobado', $aprobado);
-	    
-	    
-	
-	     
+		
 		if ($ins->execute()){
 
-
-		echo alerta('!¡Felicidades! completo con exito el registro, pronto nos contactaremos con usted para evaluar su solicitud.','');
+			
+		echo alerta('!¡Felicidades! completo con exito el registro, pronto nos contactaremos con usted para evaluar su solicitud.','../../carpeta_pagina_principal');
 		
+    
 		$ins = null;
 		$con = null;
 		}else{
-			echo alerta('El producto no pudo ser guardado','inventario.php');
+			echo alerta('El producto no pudo ser guardado, utiliza el formulario','inventario.php');
 		}
 		
 
 
 
-}else{
-echo alerta('Utiliza el formulario','inventario.php');
+}
+ else{
+ //echo alerta('Utiliza el formulario','inventario.php');
 }
 
  ?> 
 
-
+ <!--
 
 <!DOCTYPE html>
 <html lang="en">
@@ -128,7 +127,7 @@ echo alerta('Utiliza el formulario','inventario.php');
 </div>
 
 
-</div>
+</div>-->
 
 
  </body>

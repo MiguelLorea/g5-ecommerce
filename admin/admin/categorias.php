@@ -9,30 +9,39 @@ $opc = htmlentities($_GET['opc']);
 					
 						<table class="table">
 						<thead>
-							<th>Foto</th>
-							<th>Nombre de usuario</th>
+						   <th>Foto</th>
+							<th>nombre de usuario</th>
+							<th>Cuil</th>
 							<th>telefono</th>
-							<th>Categoria</th>
-							<th>nombre de tienda</th>
-							<th></th>
-							<th></th>
-							<th></th>
+							<th>categoria</th>
+							<th>direccion</th>
+							<th>nombre tienda</th>
+				           <th></th>
+						   <th></th>
+						   <th></th>
 						</thead>
 						<tbody>
-		<?php 
+		                 
+						 <?php 
 							if ($opc == 'aprobado') {
 							$sel = $con->prepare("SELECT * FROM inventario WHERE aprobado = ? ORDER BY id ");
-							$sel->execute(array($opc));
+							$sel->execute();
 							}
+							else{
+								$sel = $con->prepare("SELECT * FROM inventario WHERE categoria = ? ORDER BY id ");
+								$sel->execute(array($opc));
+								}
+
 							  	while ($f = $sel->fetch()) {  ?>
 							  		<tr>
 							  		<td><img src="<?php echo $f['foto'] ?>" width="50" heigth="50" ></td>
 							  		<td><?php echo $f['nombredeusuario'] ?></td>
-							  		
+									  <td><?php echo $f['cuil'] ?></td>
 							  		<td><?php echo $f['telefono'] ?></td>
 							  		<td><?php echo $f['categoria'] ?></td>
-							  		<td><?php echo $f['nombretienda'] ?></td>
 							  		<td><?php echo substr($f['direccion'] , 0, 100) ?>...</td>
+								    <td><?php echo $f['nombretienda'] ?></td>
+									
 							  		<td><a href="agregar_imagenes.php?clave=<?php echo $f['clave'] ?>" class="btn btn-outline-success btn-sm"><span class="material-icons">add</span></a></td>
 							  		<td><a href="editar_producto.php?clave=<?php echo $f['clave'] ?>" class="btn btn-outline-primary btn-sm"><span class="material-icons">edit</span></a></td>
 							  		<td><a href="#" class="btn btn-outline-danger btn-sm" onclick="bootbox.confirm('Seguro que desea realizar esta accion', function(result){ if (result == true){ location.href='eliminar_producto.php?clave=<?php echo $f['clave'] ?>&foto=<?php echo $f['foto'] ?>&pag=inventario.php';} })"><span class="material-icons" >clear</span></a></td>
@@ -44,40 +53,42 @@ $opc = htmlentities($_GET['opc']);
 							  	 ?>
 
 
+                            <?php 
+							if ($opc == 'general') {
+								
 
-
-<?php 
-							if ($opc == 'pendiente') {
 							$sel = $con->prepare("SELECT * FROM inventario WHERE aprobado = ? ORDER BY id ");
-							$sel->execute(array($opc));
+							$sel->execute();
+
+
 							}
+							else{
+								$sel = $con->prepare("SELECT * FROM inventario WHERE categoria = ? ORDER BY id ");
+								$sel->execute(array($opc));
+								}
+
 							  	while ($f = $sel->fetch()) {  ?>
 							  		<tr>
 							  		<td><img src="<?php echo $f['foto'] ?>" width="50" heigth="50" ></td>
 							  		<td><?php echo $f['nombredeusuario'] ?></td>
-							  		
+							  		<td><?php echo $f['cuil'] ?></td>
 							  		<td><?php echo $f['telefono'] ?></td>
 							  		<td><?php echo $f['categoria'] ?></td>
-							  		<td><?php echo $f['nombretienda'] ?></td>
 							  		<td><?php echo substr($f['direccion'] , 0, 100) ?>...</td>
+									<td><?php echo $f['nombretienda'] ?></td>
+									
+									>
 							  		<td><a href="agregar_imagenes.php?clave=<?php echo $f['clave'] ?>" class="btn btn-outline-success btn-sm"><span class="material-icons">add</span></a></td>
 							  		<td><a href="editar_producto.php?clave=<?php echo $f['clave'] ?>" class="btn btn-outline-primary btn-sm"><span class="material-icons">edit</span></a></td>
 							  		<td><a href="#" class="btn btn-outline-danger btn-sm" onclick="bootbox.confirm('Seguro que desea realizar esta accion', function(result){ if (result == true){ location.href='eliminar_producto.php?clave=<?php echo $f['clave'] ?>&foto=<?php echo $f['foto'] ?>&pag=inventario.php';} })"><span class="material-icons" >clear</span></a></td>
-							  	</tr>
+							  	   </tr>
 							  	<?php 
 							  	}
 							  	$sel = null;
 							  	$con = null;
 							  	 ?>
 
-
-
-
-
-
-
-
-						</tbody>
+						</body>
 					</table>
 
 				

@@ -7,21 +7,45 @@ $sel->execute(array($clave));
   	$sel = null;
 ?>
 
+<!--armamos la planilla-->
+
 <div class="container" style="margin-top: 1%;">
 	<div class="card text-white bg-secondary">
-			<div class="card-header"><h4 class="card-title">Editar producto</h4></div>
+		
+			<div class="card-header"><h4 class="card-title">Configurar pagina</h4></div>
 			<div class="card-body">
+               
+
 				<form action="up_inventario.php" method="post" autocomplete="off" enctype="multipart/form-data">
 					<input type="hidden" name="clave" value="<?php echo $clave ?>">
+
+
+					<!--NOMBRE DE USUARIO-->
 					<div class="form-group">
 						<input type="text" name="nombredeusuario" required placeholder="nombre de usuario" class="form-control" value="<?php echo $f['nombredeusuario'] ?>">
 					</div>
+					<!--CUIL-->
 					<div class="form-group">
-						<input type="text" name="cuil" required placeholder="cuil" class="form-control" value="<?php echo $f['cuil'] ?>">
+						<input type="text" name="cuil" required placeholder="Cuil" class="form-control" value="<?php echo $f['cuil'] ?>">
+					</div>
+					<!--TELEFONO-->
+					<div class="form-group">
+						<input type="number"  required name="telefono" placeholder="teléfono" class="form-control" value="<?php echo $f['telefono'] ?>">
+					</div>
+
+                  <!--FOTO-->
+
+					<div class="form-group">
+						<img src="<?php echo $f['foto'] ?>" width="200">
 					</div>
 					<div class="form-group">
-						<input type="number"  required name="telefono" placeholder="telefono" class="form-control" value="<?php echo $f['telefono'] ?>">
+						<input type="file" name="imagen" class="form-control">
 					</div>
+
+					<input type="hidden" name="anterior" value="<?php echo $f['foto'] ?>">
+
+
+					<!--CATEGORIA-->
 					<div class="form-group">
 						<select name="categoria" required class="form-control">
 							<option value="<?php echo $f['categoria'] ?>"><?php echo $f['categoria'] ?></option>
@@ -35,8 +59,21 @@ $sel->execute(array($clave));
 					</div>
 
 
+					<!--DIRECCION-->
+					<div class="form-group">
+						<input type="text" name="direccion" required placeholder="dirección" class="form-control" value="<?php echo $f['direccion'] ?>">
+					</div>
 
-   <div class="form-group">
+					<!--NOMBRE DE LA TIENDA-->
+					<div class="form-group">
+						<input type="text" name="nombretienda" required placeholder="nombre de tienda" class="form-control" value="<?php echo $f['nombretienda'] ?>">
+					</div>
+
+				
+
+					<!--FONDO-->
+
+					<!--<div class="form-group">
 						<select name="fondo" required class="form-control">
 							<option value="" disabled="" selected="">Elige un color de fondo</option>
 							<option value="coral">coral</option>
@@ -49,51 +86,95 @@ $sel->execute(array($clave));
                           <option value="white"> blanco</option>
 						</select>
 
-					</div>
+					</div>-->
            
+					<!--LOGO-->
 
+					<!--<div ><h5>Logo</h5></div>
 
-	<div class="form-group">
+	                <div class="form-group">
 						<img src="<?php echo $f['logo'] ?>" width="200">
 					</div>
 					<div class="form-group">
 						<input type="file" name="imagen2" class="form-control">
 					</div>
 
+					<input type="hidden" name="anterior" value="<?php echo $f['logo'] ?>">-->
 
 
+					<!--VIDEO/IMAGEN-->
+
+				  <!--	<div ><h5>Video/imagen</h5></div>
 
 					<div class="form-group">
-						<img src="<?php echo $f['foto'] ?>" width="200">
+						<img src="<?php echo $f['imagenfondo'] ?>" width="200">
 					</div>
+
 					<div class="form-group">
-						<input type="file" name="imagen" class="form-control">
+						<input type="file" name="imagen3" class="form-control">
 					</div>
 
+					<input type="hidden" name="anterior" value="<?php echo $f['imagenfondo'] ?>">-->
 
+                  <!--BOTON EDITAR--> 
 
-
-					<input type="hidden" name="anterior" value="<?php echo $f['foto'] ?>">
-					<div class="form-group">
-						<input type="text" name="direccion" required placeholder="direccion" class="form-control" value="<?php echo $f['direccion'] ?>">
-					</div>
-					<div class="form-group">
-						<input type="text" name="nombretienda" required placeholder="nombre tienda" class="form-control" value="<?php echo $f['nombretienda'] ?>">
-					</div>
-						<div class="form-group">
-						<select name="aprobado" required class="form-control">
-								<option value="<?php echo $f['aprobado'] ?>"><?php echo $f['aprobado'] ?>
-							<option value="aprobado">aprobado</option>
-							<option value="pendiente">pendiente</option>
-							
-						</select>
-					</div>
-					
 					<button type="submit" class="btn btn-info">Editar</button>
 
 				</form>
 			</div>
 		</div>
+
+   
+		<div class="card text-white bg-dark" style="margin-top: 1%;">
+				<div class="card-header"><h4 class="card-title"> registro</h4></div>
+				<div class="card-body">
+					
+					<table class="table">
+						<thead>
+							<th>Foto</th>
+							<th>nombre de usuario</th>
+							<th>Cuil</th>
+							<th>telefono</th>
+							<th>categoria</th>
+							<th>direccion</th>
+							<th>nombre tienda</th>
+						    
+							<th></th>
+							<th></th>
+						</thead>
+						<tbody>
+
+						<?php 
+							$sel = $con->prepare("SELECT * FROM inventario ORDER BY id DESC limit 1 ");
+							$sel->execute();
+							  	while ($f = $sel->fetch()) {  ?>
+							  	<tr>
+							  		<td><img src="<?php echo $f['foto'] ?>" width="50" heigth="50" ></td>
+							  		<td><?php echo $f['nombredeusuario'] ?> </td>
+							  		<td><?php echo $f['cuil'] ?></td>
+									<td><?php echo $f['telefono'] ?></td>
+									<td><?php echo $f['categoria'] ?></td>
+									<td><?php echo $f['direccion'] ?></td>
+									<td><?php echo $f['nombretienda'] ?></td>
+									<!--<td><img src="<?php echo $f['logo'] ?>" width="50" heigth="50" ></td>-->
+									<!--<td><img src="<?php echo $f['imagenfondo'] ?>" width="50" heigth="50" ></td>-->
+							  		<!--<td><a href="editar_producto.php?clave=<?php echo $f['clave'] ?>" class="btn btn-outline-primary btn-sm"><span class="material-icons">edit</span></a></td>-->
+							  	</tr>
+							  	<?php 
+							  	}
+							  	$sel = null;
+							  	$con = null;
+							  	 ?>
+						</tbody>
+					</table>
+
+				
+
+				</div>
+			</div>
+
+
+
 </div>
 
 <?php include '../extend/footer.php'; ?>
